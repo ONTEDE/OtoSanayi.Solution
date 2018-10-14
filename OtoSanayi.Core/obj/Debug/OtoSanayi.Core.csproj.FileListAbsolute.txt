@@ -12,3 +12,8 @@ C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.csprojResolveAssemblyReference.cache
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.dll
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.csprojResolveAssemblyReference.cache
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.pdb

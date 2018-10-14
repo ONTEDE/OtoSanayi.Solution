@@ -40,3 +40,17 @@ C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\Enti
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Debug\OtoSanayi.DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Debug\OtoSanayi.DataAccessLayer.dll
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Debug\OtoSanayi.DataAccessLayer.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\OtoSanayi.DataAccessLayer.dll.config
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\OtoSanayi.DataAccessLayer.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\OtoSanayi.DataAccessLayer.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\OtoSanayi.Core.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\OtoSanayi.Entities.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\OtoSanayi.Core.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\OtoSanayi.Entities.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Debug\OtoSanayi.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Debug\OtoSanayi.DataAccessLayer.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Debug\OtoSanayi.DataAccessLayer.pdb
