@@ -1,0 +1,85 @@
+﻿@using OtoSanayi.Entities
+@model List<Kurumsal>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Kurum Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#"><b>Kurum Listesi</b></a>
+            </li>
+            <li>
+                Kurum Detay
+            </li>
+        </ol>
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Duyuru Listesi</h5>
+                <div class="ibox-tools">
+                    <a href="/Kurumsal/Ekle" class="btn btn-primary">
+                        Kurumsal Ekle
+                    </a>
+
+                </div>
+            </div>
+            <div class="ibox-content">
+                <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                       placeholder="ara">
+
+                <table class="footable table table-stripped" data-page-size="10" data-filter=#filter>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Kurumsal Adı</th>
+                            <th>İçerik</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="gradeX">
+                                <td>@item.Kurumsalkategori.KategoriAdi</td>
+                                <td>@item.Baslik</td>
+                                <td>
+                                    @if (item.KisaIcerik.Length > 70)
+                                    {@item.KisaIcerik.Substring(0, 69);
+                                    }
+                                    else
+                                    { @item.KisaIcerik;
+                                    }
+                                </td>
+
+                                <td>
+                                    <a href="/Kurumsal/Duzenle/@item.ID" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Düzenle</a>
+                                    <a href="/Kurumsal/Detay/@item.ID" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Detay</a>
+                                    <a href="/Kurumsal/Sil/@item.ID" onclick="return confirm('Silmek İstediğinize Emin Misiniz')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Sil</a>
+                                </td>
+                            </tr>
+                        }
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="12">
+                                <ul class="pagination pull-right"></ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

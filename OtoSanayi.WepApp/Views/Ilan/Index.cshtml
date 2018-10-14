@@ -1,0 +1,91 @@
+﻿@using OtoSanayi.WepApp.Models
+@using OtoSanayi.Entities
+@model List<Ilan>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Ilan Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#"><b>Ilan Listesi</b></a>
+            </li>
+            <li>
+                Ilan Ekle
+            </li>
+        </ol>
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Ilan Listesi</h5>
+                <div class="ibox-tools">
+                    <a href="/Ilan/Ekle" class="btn btn-primary">
+                        Ilan Ekle
+                    </a>
+
+                </div>
+            </div>
+            <div class="ibox-content">
+                <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                       placeholder="ara">
+
+                <table class="footable table table-stripped" data-page-size="10" data-filter=#filter>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Firma</th>
+                            <th>Ilan Adı</th>
+                            <th>Ilan Açıklama</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="gradeX">
+                                <td>@item.kategori.KategoriAdi</td>
+                                <td>@item.firma.FirmaAdi</td>
+                                <td>@AdGetir.Ad(item.Baslik)</td>
+                                <td>
+                                    @if (item.KisaAciklama.Length > 70)
+                                    {@Html.Raw(item.KisaAciklama.Substring(0, 69))}
+                                    else
+                                    {
+                                        @Html.Raw(item.KisaAciklama).ToString();
+                                    }
+                                    
+                                    
+                            </td>
+
+
+                                <td>
+                                    <a href="/Ilan/Duzenle/@item.ID" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Düzenle</a>
+                                    <a href="/Ilan/Detay/@item.ID" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Detay</a>
+                                    <a href="/Ilan/Sil/@item.ID" onclick="return confirm('Silmek İstediğinize Emin Misiniz')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Sil</a>
+                                </td>
+                            </tr>
+                        }
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="12">
+                                <ul class="pagination pull-right"></ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

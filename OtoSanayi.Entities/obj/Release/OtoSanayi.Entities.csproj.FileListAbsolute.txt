@@ -1,0 +1,25 @@
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.csprojResolveAssemblyReference.cache
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.dll.config
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.xml
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.csprojResolveAssemblyReference.cache
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.dll.config
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.xml
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.csprojResolveAssemblyReference.cache
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.pdb

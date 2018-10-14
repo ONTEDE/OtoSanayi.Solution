@@ -1,0 +1,14 @@
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.pdb
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.csprojResolveAssemblyReference.cache
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\bin\Debug\OtoSanayi.Core.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.csprojResolveAssemblyReference.cache
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Debug\OtoSanayi.Core.pdb

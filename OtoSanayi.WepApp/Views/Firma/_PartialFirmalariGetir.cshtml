@@ -1,0 +1,35 @@
+﻿@using OtoSanayi.Entities
+@model List<Firma>
+
+@foreach (var item in Model)
+            {
+    <tr class="gradeX">
+
+        <td>
+            @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a>*@
+
+            <b> @item.FirmaAdi</b>
+        </td>
+        <td class="col-md-6">
+            @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+
+            @*<a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+
+            <div class="row">
+
+                @foreach (var itm in item.KategoriFirma)
+                {
+                    @itm.FirmaKategori.KategoriAdi.ToLower();
+                    @(" , ")
+                }
+            </div>
+
+        </td>
+
+       
+        <td>@item.Adres</td>
+
+        <td>@item.FirmaTel</td>
+
+    </tr>
+}

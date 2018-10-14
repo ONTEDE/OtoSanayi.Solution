@@ -1,0 +1,64 @@
+﻿@model OtoSanayi.Entities.Hizmet
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Hizmet Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Hizmet Listesi</a>
+            </li>
+            <li>
+                <b> Hizmet Detay</b>
+            </li>
+        </ol>
+    </div>
+}
+
+<div>
+    <h4>Hizmet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HizmetBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HizmetBaslik)
+        </dd>
+               
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HizmetIcerik)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.HizmetIcerik)*@
+            @Html.Raw(Model.HizmetIcerik)
+        </dd>
+
+        
+    </dl>
+    </div>
+<div class="row">
+    @if (Model.hizmetResimler!=null || Model.hizmetResimler.Count() > 0)
+    {
+        foreach (var item in Model.hizmetResimler)
+        {
+            if (item != null) { 
+            <div class="col-md-1">
+                <img src="~/img/Hizmet/@item.ResimYol" width="100" height="100" />
+            </div>
+            }
+        }
+    }
+</div><br />
+<p>
+    @Html.ActionLink("Geri", "Index", null, new { @class = "btn btn-warning" })||
+    @Html.ActionLink("Güncelle", "Duzenle", new {id=Model.ID }, new { @class = "btn btn-primary" })
+</p>

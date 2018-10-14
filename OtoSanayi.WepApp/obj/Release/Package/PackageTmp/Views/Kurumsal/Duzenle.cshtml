@@ -1,0 +1,127 @@
+﻿@model OtoSanayi.Entities.Kurumsal
+
+@{
+    ViewBag.Title = "Duzenle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Kurumsal Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Kurumsal Listesi</a>
+            </li>
+            <li>
+                <b> Kurumsal Düzenle</b>
+            </li>
+        </ol>
+    </div>
+}
+
+@using (Html.BeginForm("Duzenle", "Kurumsal", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Kurum</h4>
+        <hr />
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        @Html.HiddenFor(x => x.ID)
+        <div class="row" id="Resimliste">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                @if (Model!=null&&Model.Resimler != null && Model.Resimler.Count() > 0)
+                {
+                    foreach (var item in Model.Resimler)
+                    {
+                        if (item != null) { 
+                        <div class="col-md-2" style="margin-left:10px;">
+                            <div class="row">
+                                <div class="col-md-12" style="position:relative;top:15px;z-index:1;">
+                                    <button type="button" onclick="rSil(@item.KurumsalID,@item.ID)" data-resimID="@item.ID" data-urunID="@item.ID" class="btn btn-danger btn-xs ResimSil"><span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                                <div class="col-md-12"><img src="~/img/Kurum/@item.ResimYol" width="100" height="100" /></div>
+
+                            </div>
+
+                        </div>
+                        }
+                    }
+
+                }
+
+            </div>
+        </div><br />
+        <div class="form-group">
+            <div class="col-md-2 "><label class="control-label pull-right">Kategori</label></div>
+            <div class="col-md-10">
+                @Html.DropDownListFor(x => x.KurumsalKategoriID, (SelectList)ViewBag.ID, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.KurumsalKategoriID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Baslik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Baslik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Baslik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.KisaIcerik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KisaIcerik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KisaIcerik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Icerik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Icerik, 7, 70, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Icerik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Resimler, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-sm-10">
+                <input type="file" name="KurumsalResimler" multiple class="form-control" />
+                <div>*JPG veya PNG formatında Olmalı</div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Geri", "Index", null, new { @class = "btn btn-warning" })||
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-upload"></span>Güncelle</button>
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+
+    function rSil(krmID,rsmID) {
+        $.ajax({
+            method: "POST",
+            url: "/Kurumsal/ResimSil/" + rsmID,
+        }).done(function (data) {
+
+            if (data.rs != 0) {
+                // yorumlar partial tekrar yüklenir..
+                $("#Resimliste").load("/Kurumsal/ResimListele/" + krmID);
+            }
+            else {
+                alert("Resim Silinemedi.");
+            }
+
+        }).fail(function () {
+            alert("Sunucu ile bağlantı kurulamadı.");
+        });
+    }
+
+</script>

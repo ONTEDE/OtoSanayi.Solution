@@ -1,0 +1,78 @@
+﻿@model OtoSanayi.Entities.Hizmet
+
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Hizmet Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Hizmet Listesi</a>
+            </li>
+            <li>
+                <b> Hizmet Ekle</b>
+            </li>
+        </ol>
+    </div>
+}
+
+
+@using (Html.BeginForm("Ekle","Hizmet", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Firma</h4>
+        <hr />
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-2 "><label class="control-label pull-right">Kategori</label></div>
+            <div class="col-md-10">
+                @Html.DropDownList("HizmetKategoriID", null, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.HizmetBaslik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.HizmetBaslik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HizmetBaslik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HizmetBaslik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.KisaHizmetIcerik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KisaHizmetIcerik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KisaHizmetIcerik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.HizmetIcerik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.HizmetIcerik, 7, 70, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.HizmetIcerik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.hizmetResimler, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-sm-10">
+                <input type="file" name="HizmetResimler" multiple class="form-control" />
+                <div>*JPG veya PNG formatında Olmalı</div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Geri", "Index", null, new { @class = "btn btn-warning" })||
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Ekle</button>
+            </div>
+        </div>
+    </div>
+}

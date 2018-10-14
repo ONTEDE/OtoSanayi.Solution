@@ -1,0 +1,12 @@
+﻿@using OtoSanayi.Entities
+@model List<Reklam>
+
+
+
+    @foreach (var item in Model)
+    {
+        <a href="@item.ReklamLink" target="_blank">
+            <img class="img-responsive" src="~/img/Reklam/@item.ResimYol"  alt="@item.ReklamAdi" />
+        </a>
+    }
+

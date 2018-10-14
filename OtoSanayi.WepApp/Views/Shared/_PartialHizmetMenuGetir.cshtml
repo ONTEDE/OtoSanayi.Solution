@@ -1,0 +1,10 @@
+﻿@using OtoSanayi.WepApp.Models
+@using OtoSanayi.Entities
+@model List<HizmetKategori>
+
+
+@foreach (var item in Model)
+{
+    <li><a href="/Hizmet/DetayGetir/@AdGetir.LinkAd(item.HizmetKategoriAdi)/@item.ID">@item.HizmetKategoriAdi</a></li>
+}
+

@@ -1,0 +1,64 @@
+﻿@model OtoSanayi.Entities.Kurumsal
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Kurumsal Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Kurumsal Listesi</a>
+            </li>
+            <li>
+                <b> Kurumsal Detay</b>
+            </li>
+        </ol>
+    </div>
+}
+
+<div>
+    <h4>Kurumsal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Baslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Baslik)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Icerik)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Icerik)*@
+            @Html.Raw(Model.Icerik)
+        </dd>
+
+
+    </dl>
+</div>
+<div class="row">
+    @if (Model.Resimler!=null || Model.Resimler.Count() > 0)
+    {
+        foreach (var item in Model.Resimler)
+        {
+            if (item != null) { 
+            <div class="col-md-1 col-xs-4">
+                <img src="~/img/Kurum/@item.ResimYol" width="100" height="100" />
+            </div>
+            }
+        }
+    }
+</div><br />
+<p>
+    @Html.ActionLink("Geri", "Index", null, new { @class = "btn btn-warning" })||
+    @Html.ActionLink("Güncelle", "Duzenle", new { id = Model.ID }, new { @class = "btn btn-primary" })
+</p>

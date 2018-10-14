@@ -1,0 +1,49 @@
+﻿@using OtoSanayi.WepApp.Models
+@using OtoSanayi.Entities
+@model Kurumsal
+
+@if (Model != null)
+{
+<div class="tr-post">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="entry-header">
+                <div class="entry-thumbnail">
+					
+                    @if (Model.Resimler != null && Model.Resimler.Count() > 0 && Model.Resimler[0] != null)
+                    {
+                        <a href="/Kurumsal/DetayGetir/@AdGetir.LinkAd(Model.Baslik)/@Model.ID"><img class="img-responsive" src="~/img/Kurum/@Model.Resimler[0].ResimYol" alt="Image"></a>
+                    }
+                    else
+                    {
+                        <a href="/Kurumsal/DetayGetir/@AdGetir.LinkAd(Model.Baslik)/@Model.ID"><img class="img-responsive" src="http://placehold.it/278x347" alt="Image"></a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="post-content">
+                @*<div class="author">
+                    <a href="#"><img class="img-responsive img-circle" src="http://placehold.it/44x44" alt="Image"></a>
+                </div>*@
+                <div class="entry-meta">
+                    <!-- <ul>
+                        <li>By <a href="#">Jhon Dun</a></li>
+                        <li>255 Share /<a href="#"> 9 Hour ago</a></li>
+                    </ul> -->
+                </div><!-- /.entry-meta -->
+                <h2 class="entry-title">
+                    <a href="/Kurumsal/DetayGetir/@AdGetir.LinkAd(Model.Baslik)/@Model.ID">@Model.KisaIcerik</a>
+                </h2>
+                <p>@Model.KisaIcerik</p>
+                <div class="read-more">
+                    <div class="continue-reading pull-left">
+                        <a href="/Kurumsal/DetayGetir/@AdGetir.LinkAd(Model.Baslik)/@Model.ID">DEVAMI İÇİN TIKLAYINIZ <i class="fa fa-angle-right"></i></a>
+                    </div>
+                   
+                </div>
+            </div><!-- /.post-content -->
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.tr-post -->
+}

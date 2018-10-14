@@ -1,0 +1,76 @@
+﻿@using OtoSanayi.WepApp.Models
+@using OtoSanayi.Entities
+@model List<Firma>
+@{
+    ViewBag.Title = "FirmaListele";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+    <h2 class="center-block"></h2>
+    <div class="row">
+        <div class="bg-transparent">
+            <div class="section-title">
+                @foreach (var item in Model)
+                {<h1><span><a href="#">@item.Kategori.KategoriAdi &nbsp; Firmaları</a></span></h1>
+                    break;
+
+                }
+            </div>          
+
+        </div>
+
+
+        <div class="ibox-content">
+
+            <table class="footable table table-stripped" data-page-size="30" data-filter=#filter>
+                <thead>
+                    <tr>
+                        <th>Firma Logo</th>
+                        <th>Firma Adı</th>
+                        <th>Blok - No</th>
+                        <th>Telefon</th>
+
+                       
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+            {
+                        <tr class="gradeX">
+                            <td>
+                                @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+
+                                <a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>
+
+                            </td>
+                            <td>
+                                @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a>*@
+
+                                <b> @item.FirmaAdi</b>
+                            </td>
+                            <td>@item.Adres</td>
+                            
+                            <td>@item.FirmaTel</td>
+                           
+                        </tr>
+                    }
+
+                <tfoot>
+                    <tr>
+                        <td colspan="12">
+                            <ul class="pagination pull-right"></ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,85 @@
+﻿@using OtoSanayi.WepApp.Models
+@model ViewIlan
+@{
+    int tek = 0;
+    int cift = 0;
+    int i = 0;
+}
+<ul class="nav nav-tabs" role="tablist">
+
+    @foreach (var item in Model.Kategoriler)
+    {
+        if (i == 0)
+        {
+            <li role="presentation" class="active"><a href="#author" data-toggle="tab"><i class="fa fa-building"></i>@item.KategoriAdi</a></li>
+            tek = item.IlanKategoriID;
+        }
+        else if (i == 1)
+        {
+            <li role="presentation"><a href="#comment" data-toggle="tab"><i class="fa fa-user"></i>@item.KategoriAdi</a></li>
+            cift = item.IlanKategoriID;
+        }
+
+
+        i++;
+    }
+
+
+
+
+
+</ul>
+@{
+
+}
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active fade in" id="author">
+        <ul class="authors-post">
+            @foreach (var item in Model.Ilanlar.Where(x => x.IlanKategoriID == tek).Take(10).ToList())
+            {
+                <li>
+                    <div class="entry-meta">
+                        <div class="author-image">
+                            @if (item.ilanResimler.Count() > 0 && item.ilanResimler[0] != null)
+                            {<a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID"><img class="img-responsive" width="45" height="45" src="~/img/Ilan/@item.ilanResimler[0].ResimYol" alt="Image"></a>
+                            }
+                            else
+                            {<a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID"><img class="img-responsive" src="~/img/ilandefault.png" alt="Image"></a> }
+                        </div>
+                        <div class="author-info">
+                            <p><a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID"><b>@item.firma.FirmaAdi</b><br />@AdGetir.KisaAd(item.Baslik)</a></p>
+                        </div>
+                    </div>
+                </li>
+
+            }
+
+
+        </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade in" id="comment">
+        <ul class="comment-list">
+
+            @foreach (var item in Model.Ilanlar.Where(x => x.IlanKategoriID == cift).Take(10).ToList())
+            {
+                <li>
+                    <div class="entry-meta">
+                        <div class="author-image">
+                            @if (item.ilanResimler.Count()>0&& item.ilanResimler[0] != null)
+                            {<a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID"><img class="img-responsive" width="45" height="45" src="~/img/Ilan/@item.ilanResimler[0].ResimYol" alt="Image"></a>
+                            }
+                            else
+                            {<a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID"><img class="img-responsive" src="~/img/ilandefault.png" alt="Image"></a> }
+                        </div>
+                        <div class="author-info">
+                            <p><a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID"><b>@item.firma.FirmaAdi</b><br />@AdGetir.KisaAd(item.Baslik)</a></p>
+                        </div>
+                    </div>
+                </li>
+
+            }
+
+        </ul>
+    </div>
+</div>
+

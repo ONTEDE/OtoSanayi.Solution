@@ -1,0 +1,43 @@
+﻿@using OtoSanayi.Entities
+@using OtoSanayi.WepApp.Models
+@model List<Slider>
+<div class="tr-home-slider home-slider-1 tr-section">
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            @{int i = 0;
+                string act = "active";
+            }
+            @foreach (Slider item in Model)
+            {
+                <li data-target="#home-carousel" data-slide-to="@i" class="@if (i == 0)
+        {@act} ">
+                    <span class="catagory">Bilgi</span>
+                    <span class="indicators-title">@AdGetir.Ad(item.SliderBaslik)</span>
+                </li>
+                i++;
+            }
+
+        </ol>
+
+
+
+        <div class="carousel-inner" role="listbox">
+            @{int j = 0;
+            }
+            @foreach (var item in Model)
+            {
+                <div class="item @if (j==0) {@act; } " style="background-image: url('../img/Slider/@item.SliderYol');">
+                    <div class="post-content">
+                        <span class="catagory" data-animation="animated fadeInUp"><a href="#">Bilgi</a></span>
+                        <h2 class="entry-title" data-animation="animated fadeInUp">
+                            <a href="@item.SliderLink" target="_blank">@AdGetir.Ad(item.SliderBaslik)</a>
+                        </h2>
+                    </div><!-- /.post-content -->
+                </div><!-- /.item -->
+
+                j++;
+            }
+
+        </div><!-- /.carousel-inner -->
+        </div>
+</div>

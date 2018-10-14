@@ -1,0 +1,42 @@
+﻿@using OtoSanayi.Entities
+@model List<Mevzuat>
+
+@{
+    ViewBag.Title = "DetayGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+    @*<h3 class="center-block"></h3>*@
+    <div class="section-title">
+        <h1>
+            <span>
+                <a href="#">
+                    @if (Model != null && Model[0].kategori.KategoriAdi != null)
+                    {
+                        @Model[0].kategori.KategoriAdi
+                    }
+                </a>
+            </span>
+        </h1>
+    </div>
+
+    <div class="row">
+        @*<div class="bg-transparent">
+                <div class="section-title">
+                    <h1><span><a href="#">@Model.Kurumsalkategori.KategoriAdi</a></span></h1>
+                </div>
+
+
+            </div>*@
+        @foreach (var item in Model)
+        {
+
+            <a href="@item.Mevzuatlink" style="color:black;"><h5>@item.Adi</h5></a>
+            <hr />
+        }
+
+
+
+    </div>
+</div>

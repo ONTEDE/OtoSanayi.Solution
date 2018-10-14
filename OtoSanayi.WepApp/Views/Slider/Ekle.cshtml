@@ -1,0 +1,61 @@
+﻿@model OtoSanayi.Entities.Slider
+
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Ekle</h2>
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Slider Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Slider Listesi</a>
+            </li>
+            <li>
+                <b>Slider Ekle</b>
+            </li>
+        </ol>
+    </div>
+}
+@using (Html.BeginForm("Ekle", "Slider", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.SliderBaslik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SliderBaslik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SliderBaslik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SliderLink, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SliderLink, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SliderLink, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SliderYol, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-sm-10">
+                <input type="file" name="SliderResim" class="form-control" />
+                <div>*JPG veya PNG formatında Olmalı</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Geri", "Index", null, new { @class = "btn btn-warning" })||
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Ekle</button>
+            </div>
+        </div>
+    </div>
+}

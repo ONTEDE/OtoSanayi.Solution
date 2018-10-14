@@ -1,0 +1,75 @@
+﻿@using OtoSanayi.Entities
+@using OtoSanayi.WepApp.Models
+@model List<Ilan>
+@{
+    ViewBag.Title = "Link Listele";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    td a {
+        color: dimgray;
+    }
+
+        td a:hover {
+            color: black;
+        }
+</style>
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+    <h2 class="center-block"></h2>
+    <div class="row">
+        <div class="bg-transparent">
+            <div class="section-title">
+                <h1><span><a href="#">T.O.S.S İLANLAR</a></span></h1>
+            </div>
+
+        </div>
+
+
+        <div class="ibox-content">
+            
+            <table class="footable table table-stripped"  data-filter=#filter>
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                       
+                        <tr class="gradeX">
+                            <td>
+                                <a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID" class="list-content">
+
+                                    <span class="list-date">@item.IlanTarih.ToShortDateString()</span>--
+
+                                    <span class="list-date">@item.kategori.KategoriAdi</span><br />
+                                    <b class="ist-title">@item.Baslik</b>
+
+                                    <p>
+
+                                        @item.KisaAciklama
+                                    </p>
+
+                                </a>
+
+
+                            </td>
+
+                        </tr>
+                    }
+
+                <tfoot>
+                    <tr>
+                        <td colspan="12">
+                            <ul class="pagination pull-right"></ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+    </div>
+</div>

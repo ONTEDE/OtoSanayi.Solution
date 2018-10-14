@@ -1,0 +1,123 @@
+﻿@using OtoSanayi.WepApp.Models
+@using OtoSanayi.Entities
+@model List<Firma>
+@{
+    ViewBag.Title = "FirmaListele";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="bg-transparent">
+    <div class="section-title">
+        @foreach (var item in Model)
+        {<h1><span><a href="#">Firmalar</a></span></h1>
+            break;
+
+        }
+    </div>
+
+</div>
+
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+    <h2 class="center-block"></h2>
+    <div class="row">
+        
+
+
+        <div class="ibox-content">
+            <div class="row">
+                @{ List<char> harfler = new List<char> { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
+                    int katID = ViewBag.KategoriID;
+                }
+                @foreach (var item in harfler)
+                {
+                    if (item != 'Z')
+                    {
+                        <a href="#" onclick="FirmalarıGetir('@item','@katID')"><strong>@(item+" -")</strong></a>
+                    }
+                    else
+                    {
+                        <a href="#" onclick="FirmalarıGetir('@item','@katID')"><strong>@(item)</strong></a>
+                    }
+
+                }
+                <hr />
+            </div>
+
+            <table class="footable table table-stripped" data-page-size="30" data-filter=#filter>
+                <thead>
+                    <tr>
+                        <th>Firma Adı</th>
+                        @*<th>Hizmet Alanları</th>*@
+                        <th>Blok - No</th>
+                        <th>Telefon</th>
+
+                    </tr>
+                </thead>
+                <tbody id="firmalar">
+                    @foreach (var item in Model)
+            {
+                        <tr class="gradeX">
+
+                            <td>
+                                @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a>*@
+
+                                <b> @item.FirmaAdi</b>
+                            </td>
+                            @*<td class="col-md-5">*@
+                                @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+
+                                @*<a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+
+                             @*<div class="row">
+
+                                    @foreach (var itm in item.KategoriFirma)
+                                    {
+                                        @itm.FirmaKategori.KategoriAdi.ToLower();
+                                        @(" , ")
+                                    }
+                                </div>*@
+
+                            @*</td>*@
+
+                           
+                            <td>@item.Adres</td>
+
+                            <td>@item.FirmaTel</td>
+
+                        </tr>
+                    }
+
+                <tfoot>
+                    <tr>
+                        <td colspan="12">
+                            <ul class="pagination pull-right"></ul>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+<script>
+    //$(function () {
+    //    $("a[data-kat-id]").click(function () {
+
+    //        var a = $(this);
+    //        var catID = a.data("kat-id");
+    //        $("#KategoriDetay").load("/Home/UrunGetir1/" + catID);
+    //    }).fail(function () {
+    //        $("#KategoriDetay").text("Ürün Bulunamadı");
+    //    });
+    //});
+
+    function FirmalarıGetir(harf, katid) {
+        //alert("Çalıştı");
+        //alert("harf: " + harf);
+        //alert("id: " + katid);
+
+        $("#firmalar").load("/Firma/FirmaAra/" + harf + ";" + katid);
+    }
+
+</script>
+

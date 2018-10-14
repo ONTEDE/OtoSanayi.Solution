@@ -1,0 +1,80 @@
+﻿@using OtoSanayi.Entities
+@model List<Mevzuat>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Mevzuat Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#"><b>Mevzuat Listesi</b></a>
+            </li>
+            <li>
+                Mevzuat Detay
+            </li>
+        </ol>
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Duyuru Listesi</h5>
+                <div class="ibox-tools">
+                    <a href="/Mevzuat/Ekle" class="btn btn-primary">
+                        Mevzuat Ekle
+                    </a>
+
+                </div>
+            </div>
+            <div class="ibox-content">
+                <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                       placeholder="ara">
+
+                <table class="footable table table-stripped" data-page-size="10" data-filter=#filter>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Mevzuat Adı</th>
+                            <th>Link</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="gradeX">
+                                <td>@item.kategori.KategoriAdi</td>
+                                <td>@item.Adi</td>
+                                <td>
+                                    @item.Mevzuatlink
+                                </td>
+
+                                <td>
+                                    <a href="/Mevzuat/Duzenle/@item.ID" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Düzenle</a>
+
+                                    <a href="/Mevzuat/Sil/@item.ID" onclick="return confirm('Silmek İstediğinize Emin Misiniz')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Sil</a>
+                                </td>
+                            </tr>
+                        }
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="12">
+                                <ul class="pagination pull-right"></ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

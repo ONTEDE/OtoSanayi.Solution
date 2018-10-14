@@ -1,0 +1,147 @@
+﻿@using OtoSanayi.WepApp.Models
+@using OtoSanayi.Entities
+@model List<Haber>
+@{
+    Haber bhaber = null;
+    Haber khaber1 = null;
+    Haber khaber2 =null;
+    if (Model.Count() >= 1)
+    {
+        bhaber = Model[0] as Haber;
+    }
+    if (Model.Count > 1)
+    {
+        khaber1 = Model[1];
+    }
+    if (Model.Count > 2)
+    {
+        khaber2 = Model[2];
+    }
+
+}
+<div class="tr-section">
+    <div class="section-title title-before">
+        <h1><a href="#">SİTEMİZDEN HABERLER</a></h1>
+    </div>
+    @if (bhaber != null)
+    {
+        <div class="tr-post">
+            <div class="entry-header">
+                <div class="entry-thumbnail">
+                    @if (bhaber.haberResimler != null && bhaber.haberResimler.Count() != 0&& bhaber.haberResimler[0] != null)
+                    {
+                        <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID"><img class="" height="293" src="~/img/Haber/@bhaber.haberResimler[0].ResimYol" alt="Image"></a>
+                    }
+                    else
+                    {
+                        <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID"><img class="img-responsive" src="http://placehold.it/262x179" alt="Image"></a>
+                    }
+
+                </div>
+            </div>
+            <div class="post-content">
+                @*<div class="author">
+                        <a href="#"><img class="img-responsive img-circle" src="http://placehold.it/44x44" alt="Image"></a>
+                    </div>*@
+
+                <h2 class="entry-title">
+                    <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID">@bhaber.HaberBaslik</a>
+                </h2>
+                <p> @bhaber.KisaHaberIcerik </p>
+                <div class="read-more">
+                    <div class="continue-reading pull-left">
+                        <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID">DEVAMI İÇİN TIKLAYINIZ<i class="fa fa-angle-right"></i></a>
+                    </div>
+                    
+                </div>
+            </div><!-- /.post-content -->
+        </div><!-- /.tr-section -->
+    }
+
+    <div class="medium-post-content row">
+        @if (khaber1 != null)
+        {
+            <div class="col-md-6 left-post">
+                <div class="tr-post">
+                    <div class="entry-header">
+                        <div class="entry-thumbnail">
+                            @if (khaber1.haberResimler != null && khaber1.haberResimler.Count != 0 && khaber1.haberResimler[0] != null )
+                            {
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID"><img class="" height="193" src="~/img/Haber/@khaber1.haberResimler[0].ResimYol" alt="Image"></a>
+                            }
+                            else
+                            {
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID"><img class="img-responsive" src="http://placehold.it/262x179" alt="Image"></a>
+                            }
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        @*<div class="author">
+                                <a href="#"><img class="img-responsive img-circle" src="http://placehold.it/44x44" alt="Image"></a>
+                            </div>*@
+
+                        <h2 class="entry-title">
+                            <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID">@khaber1.HaberBaslik</a>
+                        </h2>
+                        <p>@khaber1.KisaHaberIcerik</p>
+                        <div class="read-more">
+                            <div class="continue-reading pull-left">
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID">DEVAMI İÇİN TIKLAYINIZ <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <!-- <div class="feed pull-right">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div><!-- /.post-content -->
+                </div><!-- /.tr-post -->
+            </div>
+        }
+        @if (khaber2 != null)
+        {
+            <div class="col-md-6">
+                <div class="tr-post">
+                    <div class="entry-header">
+                        <div class="entry-thumbnail">
+                            @if (khaber2.haberResimler != null && khaber2.haberResimler.Count != 0 && khaber2.haberResimler[0] != null )
+                            {
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID"><img class="" height="193" src="~/img/Haber/@khaber2.haberResimler[0].ResimYol" alt="Image"></a>
+                            }
+                            else
+                            {
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID"><img class="img-responsive" src="http://placehold.it/262x179" alt="Image"></a>
+                            }
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        @*<div class="author">
+                            <a href="#"><img class="img-responsive img-circle" src="http://placehold.it/44x44" alt="Image"></a>
+                        </div>*@
+
+                        <h2 class="entry-title">
+                            <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID">@khaber2.HaberBaslik</a>
+                        </h2>
+                        <p>@khaber2.KisaHaberIcerik</p>
+                        <div class="read-more">
+                            <div class="continue-reading pull-left">
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID">DEVAMI İÇİN TIKLAYINIZ <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <!-- <div class="feed pull-right">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div><!-- /.post-content -->
+                </div><!-- /.tr-post -->
+            </div>
+        }
+    </div><!-- /.row -->
+</div>

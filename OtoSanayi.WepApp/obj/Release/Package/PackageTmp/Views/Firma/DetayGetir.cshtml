@@ -1,0 +1,39 @@
+﻿@model OtoSanayi.Entities.Firma
+@{
+    ViewBag.Title = "DetayGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+    <h2 class="center-block"></h2>
+    <div class="row">
+        <div class="bg-transparent">
+            <div class="section-title">
+                <h1><span><a href="#">@Model.FirmaAdi</a></span></h1>
+            </div>
+            @Html.Partial("_PartialResimGalerisi", Model.FirmaResimler)
+
+        </div>
+        <table>
+            <tr>
+                <td><b>Firma Adı:</b></td>
+                <td>@Model.FirmaAdi</td>
+            </tr>
+            <tr>
+                <td><b>Telefon Numarası:</b></td>
+                <td>@Model.FirmaTel</td>
+            </tr>
+            <tr>
+                <td><b>İnternet Sitesi:</b></td>
+                <td><a href="@Model.FirmaLink" target="_blank">@Model.FirmaLink</a></td>
+            </tr>
+            <tr>
+                <td><b>Firma Logo</b></td>
+                <td><img  src="~/img/Firma/@Model.Logo" width="50" height="50"/></td>
+            </tr>
+        </table>
+        @Html.Raw(Model.Aciklama)
+
+
+    </div>
+</div>

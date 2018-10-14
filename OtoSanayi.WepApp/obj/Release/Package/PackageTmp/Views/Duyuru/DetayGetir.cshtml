@@ -1,0 +1,24 @@
+﻿@using OtoSanayi.Entities
+@model List<Duyuru>
+
+@{
+    ViewBag.Title = "DetayGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+   
+    <div class="row">
+       
+        @foreach (var item in Model)
+        {
+
+            <h4>@item.DuyuruBaslik</h4><br />
+            <small>@item.DuyuruTarih.ToShortDateString()</small>
+            @Html.Raw(item.DuyuruIcerik)
+        }
+
+
+
+    </div>
+</div>

@@ -1,0 +1,48 @@
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.dll.config
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.pdb
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Core.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.DataAccessLayer.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Entities.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Core.pdb
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.DataAccessLayer.pdb
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.xml
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.dll
+C:\Users\HRN\documents\visual studio 2015\Projects\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.dll.config
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Core.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.DataAccessLayer.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Entities.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Core.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.DataAccessLayer.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.xml
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.dll
+C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.dll.config
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.BusinessLayer.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Core.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.DataAccessLayer.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Entities.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Core.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.DataAccessLayer.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.xml
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.dll
+C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.BusinessLayer\obj\Release\OtoSanayi.BusinessLayer.pdb

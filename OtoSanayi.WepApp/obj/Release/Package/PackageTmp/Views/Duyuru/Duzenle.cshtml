@@ -1,0 +1,61 @@
+﻿@model OtoSanayi.Entities.Duyuru
+
+@{
+    ViewBag.Title = "Duzenle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Duyuru Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#"><b>Duyuru Listesi</b></a>
+            </li>
+            <li>
+                <b>Duyuru Düzenle</b>
+            </li>
+        </ol>
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Duyuru</h4>
+        <hr />
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        @Html.HiddenFor(x=>x.ID)
+        <div class="form-group">
+            @Html.LabelFor(model => model.DuyuruBaslik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DuyuruBaslik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DuyuruBaslik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.KisaDuyuruIcerik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KisaDuyuruIcerik, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.KisaDuyuruIcerik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.DuyuruIcerik, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.DuyuruIcerik, 7, 70, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DuyuruIcerik, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Geri", "Index", null, new { @class = "btn btn-warning" })||
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-upload"></span>Güncelle</button>
+            </div>
+        </div>
+    </div>
+}
+

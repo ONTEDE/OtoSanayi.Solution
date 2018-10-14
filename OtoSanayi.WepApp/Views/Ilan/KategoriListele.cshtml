@@ -1,0 +1,78 @@
+﻿@using OtoSanayi.Entities
+@model List<IlanKategori>
+@{
+    ViewBag.Title = "KategoriListele";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Ilan Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#"><b>Ilan Kategori Listesi</b></a>
+            </li>
+            <li>
+                Ilan Kategori Ekle
+            </li>
+        </ol>
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Duyuru Listesi</h5>
+                <div class="ibox-tools">
+                    <a href="/Ilan/KategoriEkle" class="btn btn-primary">
+                        Kategori Ekle
+                    </a>
+
+                </div>
+            </div>
+            <div class="ibox-content">
+                <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                       placeholder="ara">
+
+                <table class="footable table table-stripped" data-page-size="10" data-filter=#filter>
+                    <thead>
+                        <tr>
+                            <th>Kategori ID</th>
+                            <th>Kategori Adı</th>
+                            <th>İşlemler</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="gradeX">
+                                <td>@item.IlanKategoriID</td>
+                                <td>@item.KategoriAdi</td>
+
+
+                                <td>
+                                    <a href="/Ilan/KategoriDuzenle/@item.IlanKategoriID" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Düzenle</a>
+                                    <a href="/Ilan/KategoriSil/@item.IlanKategoriID" onclick="return confirm('Silmek İstediğinize Emin Misiniz')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Sil</a>
+                                </td>
+                            </tr>
+                        }
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="12">
+                                <ul class="pagination pull-right"></ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

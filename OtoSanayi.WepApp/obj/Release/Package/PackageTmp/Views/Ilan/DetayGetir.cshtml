@@ -1,0 +1,26 @@
+﻿@model OtoSanayi.Entities.Ilan
+@{
+    ViewBag.Title = "DetayGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+    <h2 class="center-block"></h2>
+    <div class="row">
+        <div class="bg-transparent">
+            <div class="section-title">
+                <h1><span><a href="#">@Model.kategori.KategoriAdi</a></span></h1>
+            </div>
+            @Html.Partial("_PartialResimGalerisi", Model.ilanResimler)
+
+        </div>
+        <h4>@Model.firma.FirmaAdi</h4>
+        <h4>@Model.IlanTarih.ToShortDateString()</h4>
+        <h4>@Model.Baslik</h4>
+
+        @Html.Raw(Model.Aciklama)
+
+
+
+    </div>
+</div>

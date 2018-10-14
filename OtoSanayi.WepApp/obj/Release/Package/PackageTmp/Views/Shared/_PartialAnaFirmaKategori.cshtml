@@ -1,0 +1,44 @@
+﻿@using OtoSanayi.WepApp.Models
+@using OtoSanayi.Entities
+@model List<FirmaKategori>
+
+
+@foreach (var item in Model)
+{
+    <div class="col-md-6">
+        <div class="tr-post medium-post">
+            <div class="section-title title-before">
+                <h1><a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID">@item.KategoriAdi</a></h1>
+            </div>
+            <ul class="small-post-list">
+                <li>
+                    <div class="entry-header">
+                        <div class="entry-thumbnail">
+                            @if (item.KategoriResim != null)
+                            {
+                                <a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID"><img class="img-responsive" width="75" height="75" src="~/img/Firma/@item.KategoriResim"  alt="@item.KategoriAciklama"></a>
+                            }
+                            else
+                            {
+                                <a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID"><img class="img-responsive" src="http://placehold.it/75x75" alt="Image"></a>
+                            }
+
+                        </div>
+                    </div>
+                    <div class="post-content media-body">
+                        <div class="entry-meta">
+                            <ul>
+                                <li><a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID"> @item.KategoriAdi</a></li>
+                            </ul>
+                        </div><!-- /.entry-meta -->
+                        <h2 class="entry-title">
+                            <a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID">@item.KategoriAciklama</a>
+                        </h2>
+                    </div><!-- /.post-content -->
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+}

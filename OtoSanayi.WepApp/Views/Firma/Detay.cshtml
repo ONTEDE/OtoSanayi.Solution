@@ -1,0 +1,95 @@
+﻿@model OtoSanayi.Entities.Firma
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Firma Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Firma Listesi</a>
+            </li>
+            <li>
+                <b> Firma Detay</b>
+            </li>
+        </ol>
+    </div>
+}
+
+<div>
+    <h4>Firma</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmaAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmaAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmaTel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmaTel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.Aciklama)*@
+            @Html.Raw(Model.Aciklama)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Logo)
+        </dt>
+
+        <dd>@if (Model.Logo != null)
+        { <img src="~/img/Firma/@Model.Logo" width="60" height="50" /> }
+           
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirmaLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirmaLink)
+        </dd>
+
+    </dl>
+    </div>
+<div class="row">
+    @if (Model.FirmaResimler!=null||Model.FirmaResimler.Count() > 0)
+    {
+        foreach (var item in Model.FirmaResimler)
+        {
+            if (item != null) { 
+            <div class="col-md-1">
+                <img src="~/img/Firma/@item.ResimYol" width="100" height="100" />
+            </div>
+            }
+        }
+    }
+</div><br />
+<p>
+    @Html.ActionLink("Geri", "Index", null, new { @class = "btn btn-warning" })||
+    @Html.ActionLink("Güncelle", "Duzenle", new {id=Model.ID }, new { @class = "btn btn-primary" })
+</p>

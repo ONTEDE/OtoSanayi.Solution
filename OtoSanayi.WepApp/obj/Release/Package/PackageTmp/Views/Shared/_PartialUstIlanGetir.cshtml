@@ -1,0 +1,12 @@
+﻿@using OtoSanayi.Entities
+@using OtoSanayi.WepApp.Models
+@model List<Ilan>
+
+<ul>
+
+    @foreach (var item in Model)
+    {
+        <li><a href="/Ilan/DetayGetir/@AdGetir.LinkAd(item.Baslik)/@item.ID">@(item.firma.FirmaAdi +"-" +AdGetir.KisaAd(item.Baslik) )</a></li>
+    }
+    
+</ul>

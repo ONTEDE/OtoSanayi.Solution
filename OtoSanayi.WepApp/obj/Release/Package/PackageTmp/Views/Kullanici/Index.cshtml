@@ -1,0 +1,82 @@
+﻿@model IEnumerable<OtoSanayi.Entities.Kullanici>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Kullanıcı Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#"><b>Kullanıcı Listesi</b></a>
+            </li>
+            <li>
+                Kullanıcı Ekle
+            </li>
+        </ol>
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>Kullanıcı Listesi</h5>
+                <div class="ibox-tools">
+                    <a href="/Kullanici/Ekle" class="btn btn-primary">
+                        Yeni Kullanıcı
+                    </a>
+
+                </div>
+            </div>
+            <div class="ibox-content">
+                <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                       placeholder="Kategori listesinde ara">
+
+                <table class="footable table table-stripped" data-page-size="10" data-filter=#filter>
+                    <thead>
+                        <tr>
+                            <th>Adı</th>
+                            <th>Soyadı</th>
+                            <th>Kullanıcı Adı</th>
+                            <th>Parola</th>
+                            <th>İşlem</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr class="gradeX">
+                                <td>@item.Adi</td>
+                                <td>@item.Soyadi</td>
+
+                                <td>
+                                @item.KullaniciAdi    
+                                </td>
+                                <td>
+                                    @item.Parola
+                                </td>
+
+                                <td>
+                                    <a href="/Kullanici/Duzenle/@item.ID" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Düzenle</a>
+                                    <a href="/Kullanici/Sil/@item.ID" onclick="return confirm('Silmek İstediğinize Emin Misiniz')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Sil</a>
+                                </td>
+                            </tr>
+                        }
+
+<tfoot>
+                        <tr>
+                            <td colspan="12">
+                                <ul class="pagination pull-right"></ul>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

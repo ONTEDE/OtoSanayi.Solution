@@ -1,0 +1,57 @@
+﻿@model OtoSanayi.Entities.Duyuru
+
+@{
+    ViewBag.Title = "Detay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Duyuru Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Duyuru Listesi</a>
+            </li>
+            <li>
+                <b>Duyuru Detay</b>
+            </li>
+        </ol>
+    </div>
+}
+
+<div>
+    <h4>Duyuru</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DuyuruBaslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuyuruBaslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuyuruIcerik)
+        </dt>
+
+        <dd>
+            @*@Html.DisplayFor(model => model.DuyuruIcerik)*@
+            @Html.Raw(Model.DuyuruIcerik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuyuruTarih)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuyuruTarih)
+        </dd>
+
+    </dl>
+</div>
+<p>    
+    <a href="/Duyuru/Index" class="btn btn-warning btn-xs"><i class="fa fa-pencil"></i> Geri</a>|
+    <a href="/Duyuru/Duzenle/@Model.ID" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Düzenle</a>
+</p>

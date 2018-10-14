@@ -1,0 +1,40 @@
+﻿@using OtoSanayi.Entities
+@model List<HizmetResim>
+
+@{int i = 0;
+    int j = 0;
+    string act = "active";}
+<div id="photo-gallery" class="carousel slide carousel-fade photo-gallery" data-ride="carousel">
+    <div class="carousel-inner">
+        @foreach (var item in Model)
+        {
+            if (item != null) { 
+            <div class="item @if(i==0) {@act }">
+                <a href="#"><img class="img-responsive" style="height:400px;" src="~/img/Hizmet/@item.ResimYol" alt="Image"></a>
+                @*<h2><a href="#">We Are Seeing The Effects Of The Minimum Wage Rise In San Francisco</a></h2>*@
+            </div>}
+            i++;
+        }
+
+    </div><!--/carousel-inner-->
+
+    <ol class="gallery-indicators carousel-indicators">
+        @foreach (var item in Model)
+        {
+            if (item != null)
+            {
+            <li data-target="#photo-gallery" data-slide-to="@j" class="@if (j == 0)
+            {@act;
+            } ">
+                <img class="img-responsive" src="~/img/Hizmet/@item.ResimYol" alt="Image">
+            </li>}
+            j++;
+        }
+
+    </ol><!--/gallery-indicators-->
+
+    <div class="gallery-turner">
+        <a class="left-photo" href="#photo-gallery" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+        <a class="right-photo" href="#photo-gallery" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+    </div>
+</div><!-- /.photo-gallery	 -->

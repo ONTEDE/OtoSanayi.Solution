@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section AnaSlider{
+    @Html.Action("AnaSliderGetir", "Slider")
+    }
+
+<div class="col-sm-8">
+    <div class="tr-content">
+        <div class="tr-ad">
+            @*<a href="#"><img class="img-responsive" src="~/img/ai/1.jpg" alt="Image"></a>*@
+            @Html.Action("UstReklamGetir", "Reklam")
+        </div><!-- /.tr-ad -->
+
+        <div class="tr-section bg-transparent">
+            <div class="section-title">
+                <h1><span><a href="#">Başkanın Mesajı</a></span></h1>
+            </div>
+
+            <div class="tr-post  post-vertical">
+                <div class="section-title title-before">
+                    <h1><a href="#">BAŞKANDAN</a></h1>
+                </div>
+                @Html.Action("AnaBaskanMesajıGetir", "Kurumsal")
+               
+            </div><!-- /.tr-post -->
+
+
+
+        </div><!-- /.business-section -->
+        <!-- <div class="tr-ad">
+            <a href="#"><img class="img-responsive" src="~/img/ai/1.jpg" alt="Image"></a>
+        </div><!-- /.add -->
+
+        <div class="tr-section bg-transparent sports-section">
+            <div class="section-title">
+                <h1><span><a href="#">HABERLER</a></span></h1>
+            </div>
+            @Html.Action("AnaHaberGetir","Haber")
+
+        </div><!-- /.sports-section -->
+
+        <div class="tr-section bg-transparent">
+            <div class="section-title">
+                <h1><span><a href="#">T.O.S.S' DE NELER YAPABİLİRSİNİZ ?</a></span></h1>
+            </div>
+            <div class="row">
+                @Html.Action("AnaFirmaKategoriGetir", "Firma")
+                
+            </div><!-- /.row -->
+        </div><!-- /.life-style-section -->
+
+        <div class="tr-section bg-transparent">
+            <div class="section-title">
+                <h1><span><a href="#"></a>Resimlerle T.O.S.S</span></h1>
+            </div>
+           @Html.Action("AnaResimGalerisiGetir","Kurumsal")
+        </div><!-- /.photo-gallery-section -->
+    </div><!-- /.tr-content -->
+</div>
+
+<div class="col-sm-4 tr-sidebar tr-sticky">
+    <div class="theiaStickySidebar">
+            <div class="tr-widget meta-widget">
+            <div class="widget-title">
+                <span>İLANLAR</span>
+            </div>
+           @Html.Action("AnaIlanGetir", "Ilan")
+        </div><!-- meta-tab -->
+        @*<div class="tr-section tr-widget tr-ad ad-before">*@
+            @*<a href="#"><img class="img-responsive" src="~/img/ai/4.jpg" alt="Image"></a>*@
+            @Html.Action("AltReklamGetir", "Reklam")
+        @*</div>*@<!-- /.tr-post -->
+    </div><!-- /.theiaStickySidebar -->
+</div>

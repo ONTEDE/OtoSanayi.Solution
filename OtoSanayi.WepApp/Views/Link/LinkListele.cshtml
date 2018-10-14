@@ -1,0 +1,61 @@
+﻿@using OtoSanayi.Entities
+@model List<Link>
+@{
+	ViewBag.Title = "Link Listele";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
+	<h2 class="center-block"></h2>
+	<div class="row">
+		<div class="bg-transparent">
+			<div class="section-title">
+				<h1><span><a href="#">Linkler</a></span></h1>
+			</div>
+
+		</div>
+
+
+		<div class="ibox-content">
+
+			<table class="footable table table-stripped" data-page-size="30" data-filter=#filter>
+				<thead>
+					<tr>
+						
+						<th>Link Adı</th>
+						<th>Link Logo</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var item in Model)
+					{
+						<tr class="gradeX">
+							<td><h4><a href="@item.LinkAdres" target="_blank" title="@item.LinkAdi">@item.LinkAdi</a></h4></td>
+
+							<td>
+								<a href="@item.LinkAdres" target="_blank" title="@item.LinkAdi"><img height="50" width="60" src="~/img/LinkLogo/@item.LinkLogo" /></a>
+
+							</td>
+
+
+						</tr>
+					}
+
+				<tfoot>
+					<tr>
+						<td colspan="12">
+							<ul class="pagination pull-right"></ul>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+
+		</div>
+
+	</div>
+</div>
+
+
+
+

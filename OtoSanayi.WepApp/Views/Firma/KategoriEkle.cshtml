@@ -1,0 +1,62 @@
+﻿@model OtoSanayi.Entities.FirmaKategori
+
+@{
+    ViewBag.Title = "KategoriEkle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Menu_Bilgi{
+
+    <div class="col-lg-10">
+        <h2>Firma Yönetimi</h2>
+        <ol class="breadcrumb">
+            <li class="active">
+                <a href="#">Firma Kategori Listesi</a>
+            </li>
+            <li>
+                <b> Firma Kategori Ekle</b>
+            </li>
+        </ol>
+    </div>
+}
+
+@using (Html.BeginForm("KategoriEkle", "Firma", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>FirmaKategori</h4>
+        <hr />
+        @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.KategoriAdi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KategoriAdi, new { htmlAttributes = new { @class = "form-control",
+               @maxlength = "74" } })
+                @Html.ValidationMessageFor(model => model.KategoriAdi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.KategoriAciklama, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.KategoriAciklama, new { htmlAttributes = new { @class = "form-control", @maxlength = "290" } })
+                @Html.ValidationMessageFor(model => model.KategoriAciklama, "", new { @class = "text-danger" })
+                
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.KategoriResim, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-sm-10">
+                <input type="file" name="KategoriLogo" class="form-control" />
+                <div>*JPG veya PNG formatında Olmalı</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+
+                @Html.ActionLink("Geri", "KategoriListele", null, new { @class = "btn btn-warning" })||
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>Ekle</button>
+            </div>
+        </div>
+    </div>
+}
