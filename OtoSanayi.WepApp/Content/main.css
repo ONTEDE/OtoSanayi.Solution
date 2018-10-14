@@ -2715,15 +2715,15 @@ textarea.form-control {
 	padding: 10px 30px 7px;
 	border-radius: 0;
 	margin-top: 10px;
-	background-color: #ed1c24;
-	border-color: #ed1c24;
+	background-color: #112c6e;
+	border-color: #112c6e;
 	text-transform: uppercase;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-	background-color: rgba(237, 28, 36, 0.56);
-	border-color: #ed1c24;
+	background-color: rgba(17, 44, 106, 0.80);
+	border-color: #112c6e;
 	outline: none;
 }
 
