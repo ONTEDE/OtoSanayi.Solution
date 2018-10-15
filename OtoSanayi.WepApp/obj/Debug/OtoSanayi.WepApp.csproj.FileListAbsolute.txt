@@ -288,3 +288,10 @@ C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.
 C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Debug\OtoSanayi.WepApp.csprojResolveAssemblyReference.cache
 C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Debug\OtoSanayi.WepApp.dll
 C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Debug\OtoSanayi.WepApp.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Antlr3.Runtime.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Newtonsoft.Json.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\System.Web.Optimization.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\WebGrease.dll
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Antlr3.Runtime.pdb
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Newtonsoft.Json.xml
+C:\Users\HRN\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\System.Web.Optimization.xml
