@@ -15,7 +15,6 @@ C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Debug\EntityFramew
 C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Debug\EntityFramework.xml
 C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Debug\OtoSanayi.Entities.csprojResolveAssemblyReference.cache
 C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Debug\OtoSanayi.Entities.dll
 C:\Users\FF\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Debug\OtoSanayi.Entities.pdb
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Debug\OtoSanayi.Entities.dll.config
