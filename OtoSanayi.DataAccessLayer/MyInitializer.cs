@@ -18,15 +18,5 @@ namespace OtoSanayi.DataAccessLayer
 
         }
     }
-    public class Modeldegisince : DropCreateDatabaseIfModelChanges<DatabaseContext>
-    {
-        protected override void Seed(DatabaseContext context)
-        {
-            Kullanici admin = new Kullanici() { Adi = "Admin", Soyadi = "Admin", KullaniciAdi = "Admin", Parola = "12345" };
-            context.Kullanicilar.Add(admin);
-            int i = context.SaveChanges();
-
-        }
-
-    }
+   
 }

@@ -1,4 +1,5 @@
-﻿@model OtoSanayi.Entities.Firma
+﻿@using OtoSanayi.Entities
+@model OtoSanayi.WepApp.Models.KategoriFirmaViewModel
 
 @{
     ViewBag.Title = "Duzenle";
@@ -28,12 +29,12 @@
         <h4>Firma</h4>
         <hr />
         @Html.ValidationSummary(false, "", new { @class = "text-danger" })
-        @Html.HiddenFor(x=>x.ID)
+        @Html.HiddenFor(x=>x.Firma.ID)
         <div class="row" id="Resimliste">
             <div class="col-md-2"></div>
             <div class="col-md-10">
-                @if (Model!=null||Model.FirmaResimler!=null || Model.FirmaResimler.Count() > 0){
-                    foreach (var item in Model.FirmaResimler){
+                @if (Model!=null||Model.Firma.FirmaResimler!=null || Model.Firma.FirmaResimler.Count() > 0){
+                    foreach (var item in Model.Firma.FirmaResimler){
                         if (item != null) {
                         <div class="col-md-2" style="margin-left:10px;">
                             <div class="row">
@@ -51,61 +52,83 @@
 
             </div>
         </div><br />
+
         <div class="form-group">
+            <div class="col-md-2 "><label class="control-label pull-right">Kategoriler</label></div>
+            <div class="col-md-10">
+                @{int i = 0; }
+
+                @foreach (FirmaKategori item in Model.FirmaKategoriler)
+                {
+                    <div class="inline">
+                        @Html.HiddenFor(x => x.FirmaKategoriler[i].ID)
+                        @Html.CheckBoxFor(x => x.FirmaKategoriler[i].Secili, new { @class = "form-check-input", })
+                        @Html.DisplayFor(x => x.FirmaKategoriler[i].KategoriAdi, new { @class = "form-check-label" })
+                        @("    ")
+
+                    </div>
+                    i++;
+                }
+
+
+            </div>
+        </div>
+
+        @*<div class="form-group">
             <div class="col-md-2 "><label class="control-label pull-right">Kategori</label></div>
             <div class="col-md-10">
-                @Html.DropDownListFor(x => x.FirmaKategoriID, (SelectList)ViewBag.ID, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.FirmaKategoriID, "", new { @class = "text-danger" })
+                @Html.DropDownListFor(x => x.Firma.FirmaKategoriID, (SelectList)ViewBag.ID, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaKategoriID, "", new { @class = "text-danger" })
             </div>
-        </div>
+        </div>*@
         <div class="form-group">
-            @Html.LabelFor(model => model.FirmaAdi, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Firma.FirmaAdi, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FirmaAdi, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.FirmaAdi, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.FirmaTel, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.FirmaTel, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.FirmaTel, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Firma.FirmaAdi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaAdi, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Adres, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Firma.FirmaTel, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Adres, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Adres, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.KisaAciklama, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.KisaAciklama, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.KisaAciklama, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Firma.FirmaTel, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaTel, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Aciklama, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Firma.Adres, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextAreaFor(model => model.Aciklama, 7, 70, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Aciklama, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Firma.Adres, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.Adres, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.KisaAciklama, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Firma.KisaAciklama, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.KisaAciklama, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.Aciklama, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Firma.Aciklama, 7, 70, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Firma.Aciklama, "", new { @class = "text-danger" })
             </div>
         </div>
         
         <div class="form-group">
-            @Html.LabelFor(model => model.FirmaLink, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Firma.FirmaLink, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.FirmaLink, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.FirmaLink, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Firma.FirmaLink, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaLink, "", new { @class = "text-danger" })
             </div>
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.Logo, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Firma.Logo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-sm-10">
                 <input type="file" name="FirmaLogo" class="form-control" />
                 <div>*JPG veya PNG formatında Olmalı</div>
@@ -113,7 +136,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Logo, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Firma.Logo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-sm-10">
                 <input type="file" name="FirmaResimler" multiple class="form-control" />
                 <div>*JPG veya PNG formatında Olmalı</div>

@@ -37,7 +37,7 @@ namespace OtoSanayi.DataAccessLayer
         public DatabaseContext()
         {
             Database.SetInitializer(new MyInitializer());
-            Database.SetInitializer(new Modeldegisince());
+            
         }
 
     }

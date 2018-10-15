@@ -4,17 +4,18 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="bg-transparent">
+    <div class="section-title">
+        <h1><span><a href="#">@Model.Kurumsalkategori.KategoriAdi</a></span></h1>
+    </div>
+    
+
+</div>
+
 <div class="tr-section theiaStickySidebar" style="padding:40px;" >
     <h2 class="center-block"></h2>
     <div class="row">
-        <div class="bg-transparent">
-            <div class="section-title">
-                <h1><span><a href="#">@Model.Kurumsalkategori.KategoriAdi</a></span></h1>
-            </div>
-            @Html.Partial("_PartialResimGalerisi", Model.Resimler)
-
-            </div>
-
+        @Html.Partial("_PartialResimGalerisi", Model.Resimler)
             <h4>@Model.Baslik</h4>
             @Html.Raw(Model.Icerik)
 
