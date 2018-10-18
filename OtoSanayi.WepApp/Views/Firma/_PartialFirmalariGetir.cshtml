@@ -10,12 +10,12 @@
 
             <b> @item.FirmaAdi</b>
         </td>
-        <td class="col-md-6">
+        @*<td class="col-md-6">
             @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
 
             @*<a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
 
-            <div class="row">
+          @*  <div class="row">
 
                 @foreach (var itm in item.KategoriFirma)
                 {
@@ -24,12 +24,12 @@
                 }
             </div>
 
-        </td>
+        </td>*@
 
        
         <td>@item.Adres</td>
 
-        <td>@item.FirmaTel</td>
+        <td><a href="tel://@item.FirmaTel">@item.FirmaTel</a></td>
 
-    </tr>
+</tr>
 }
