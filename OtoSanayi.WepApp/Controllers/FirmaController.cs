@@ -548,7 +548,7 @@ namespace OtoSanayi.WepApp.Controllers
 
         public PartialViewResult AnaFirmaKategoriGetir()
         {
-            return PartialView("_PartialAnaFirmaKategori", _managerFirmaKategori.List().Take(5).ToList());
+            return PartialView("_PartialAnaFirmaKategori", _managerFirmaKategori.List().Take(6).ToList());
         }
 
 
@@ -584,11 +584,11 @@ namespace OtoSanayi.WepApp.Controllers
         }
         public PartialViewResult FirmaKategoriDoldur()
         {
-            return PartialView("_PartialFirmaMenuGetir", _managerFirmaKategori.List().Take(5).ToList());
+            return PartialView("_PartialFirmaMenuGetir", _managerFirmaKategori.List().Take(6).ToList());
         }
         public PartialViewResult FirmaKategoriDoldur1()
         {
-            return PartialView("_PartialFooterFirmaMenuGetir", _managerFirmaKategori.List().Take(5).ToList());
+            return PartialView("_PartialFooterFirmaMenuGetir", _managerFirmaKategori.List().Take(6).ToList());
         }
 
         public PartialViewResult FirmaAra(string id)

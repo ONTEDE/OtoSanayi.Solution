@@ -545,12 +545,6 @@
     <Content Include="img\others\weather8.png" />
     <Content Include="img\others\weather9.png" />
     <Content Include="img\others\world.png" />
-    <Content Include="img\service\1.png" />
-    <Content Include="img\service\2.png" />
-    <Content Include="img\service\3.png" />
-    <Content Include="img\service\4.png" />
-    <Content Include="img\service\5.png" />
-    <Content Include="img\service\6.png" />
     <Content Include="scripts\Admin\bootstrap.js" />
     <Content Include="scripts\Admin\bootstrap.min.js" />
     <Content Include="scripts\Admin\demo\chartjs-demo.js" />
@@ -1138,6 +1132,7 @@
     <Folder Include="img\LinkLogo\" />
     <Folder Include="img\post\sports\" />
     <Folder Include="img\Reklam\" />
+    <Folder Include="img\service\" />
     <Folder Include="img\Slider\" />
     <Folder Include="img\team\" />
     <Folder Include="scripts\tinymce\plugins\anchor\" />

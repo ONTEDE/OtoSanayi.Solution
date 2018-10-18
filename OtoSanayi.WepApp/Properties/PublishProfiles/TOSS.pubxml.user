@@ -49,19 +49,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:14:24</publishTime>
     </File>
     <File Include="bin/OtoSanayi.BusinessLayer.dll">
-      <publishTime>10/15/2018 20:20:05</publishTime>
+      <publishTime>10/18/2018 21:34:24</publishTime>
     </File>
     <File Include="bin/OtoSanayi.Core.dll">
-      <publishTime>10/15/2018 18:27:46</publishTime>
+      <publishTime>10/15/2018 21:48:04</publishTime>
     </File>
     <File Include="bin/OtoSanayi.DataAccessLayer.dll">
-      <publishTime>10/15/2018 20:20:05</publishTime>
+      <publishTime>10/18/2018 21:34:24</publishTime>
     </File>
     <File Include="bin/OtoSanayi.Entities.dll">
-      <publishTime>10/15/2018 18:27:46</publishTime>
+      <publishTime>10/15/2018 21:48:04</publishTime>
     </File>
     <File Include="bin/OtoSanayi.WepApp.dll">
-      <publishTime>10/15/2018 20:20:09</publishTime>
+      <publishTime>10/18/2018 21:46:58</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>10/14/2018 19:14:23</publishTime>
@@ -142,7 +142,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:08:30</publishTime>
     </File>
     <File Include="Content/main.css">
-      <publishTime>10/14/2018 22:35:08</publishTime>
+      <publishTime>10/18/2018 19:20:43</publishTime>
     </File>
     <File Include="Content/patterns/3.png">
       <publishTime>10/14/2018 19:08:34</publishTime>
@@ -3058,7 +3058,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:34</publishTime>
     </File>
     <File Include="Views/Duyuru/DuyuruListele.cshtml">
-      <publishTime>10/14/2018 21:57:07</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Duyuru/Duzenle.cshtml">
       <publishTime>10/14/2018 19:12:34</publishTime>
@@ -3076,16 +3076,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:34</publishTime>
     </File>
     <File Include="Views/Firma/Duzenle.cshtml">
-      <publishTime>10/14/2018 19:12:34</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Firma/Ekle.cshtml">
-      <publishTime>10/14/2018 19:12:34</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Firma/FirmaListele.cshtml">
-      <publishTime>10/14/2018 21:26:36</publishTime>
+      <publishTime>10/18/2018 00:56:03</publishTime>
     </File>
     <File Include="Views/Firma/Index.cshtml">
-      <publishTime>10/14/2018 19:12:34</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Firma/KategoriDuzenle.cshtml">
       <publishTime>10/14/2018 19:12:34</publishTime>
@@ -3094,10 +3094,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:34</publishTime>
     </File>
     <File Include="Views/Firma/KategoriListele.cshtml">
-      <publishTime>10/14/2018 19:12:34</publishTime>
+      <publishTime>10/18/2018 20:59:43</publishTime>
     </File>
     <File Include="Views/Firma/_PartialFirmalariGetir.cshtml">
-      <publishTime>10/14/2018 19:12:34</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Firma/_PartialResimGalerisi.cshtml">
       <publishTime>10/14/2018 19:12:34</publishTime>
@@ -3160,7 +3160,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:35</publishTime>
     </File>
     <File Include="Views/Home/AccessDenied.cshtml">
-      <publishTime>10/15/2018 18:04:01</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Home/dene.cshtml">
       <publishTime>10/01/2018 11:38:21</publishTime>
@@ -3169,7 +3169,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:35</publishTime>
     </File>
     <File Include="Views/Home/Login.cshtml">
-      <publishTime>10/15/2018 18:04:01</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Ilan/Detay.cshtml">
       <publishTime>10/14/2018 19:12:36</publishTime>
@@ -3220,7 +3220,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:37</publishTime>
     </File>
     <File Include="Views/Kurumsal/DetayGetir.cshtml">
-      <publishTime>10/15/2018 18:26:09</publishTime>
+      <publishTime>10/15/2018 21:48:03</publishTime>
     </File>
     <File Include="Views/Kurumsal/Duzenle.cshtml">
       <publishTime>10/14/2018 19:12:36</publishTime>
@@ -3259,7 +3259,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:37</publishTime>
     </File>
     <File Include="Views/Link/LinkListele.cshtml">
-      <publishTime>10/15/2018 18:11:49</publishTime>
+      <publishTime>10/15/2018 21:48:04</publishTime>
     </File>
     <File Include="Views/Mevzuat/DetayGetir.cshtml">
       <publishTime>10/14/2018 19:12:37</publishTime>
@@ -3292,10 +3292,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:37</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>10/15/2018 18:17:14</publishTime>
+      <publishTime>10/18/2018 19:02:01</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutAdmin.cshtml">
-      <publishTime>10/14/2018 19:12:37</publishTime>
+      <publishTime>10/18/2018 18:38:33</publishTime>
     </File>
     <File Include="Views/Shared/_PartiaAnaIlanGetir.cshtml">
       <publishTime>10/14/2018 19:12:37</publishTime>
@@ -3304,16 +3304,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:37</publishTime>
     </File>
     <File Include="Views/Shared/_PartialAnaFirmaKategori.cshtml">
-      <publishTime>10/15/2018 18:12:47</publishTime>
+      <publishTime>10/18/2018 20:56:11</publishTime>
     </File>
     <File Include="Views/Shared/_PartialAnaSliderGetir.cshtml">
       <publishTime>10/14/2018 19:12:37</publishTime>
     </File>
     <File Include="Views/Shared/_PartialFirmaMenuGetir.cshtml">
-      <publishTime>10/14/2018 20:12:01</publishTime>
+      <publishTime>10/15/2018 21:48:04</publishTime>
     </File>
     <File Include="Views/Shared/_PartialFooterFirmaMenuGetir.cshtml">
-      <publishTime>10/14/2018 19:12:37</publishTime>
+      <publishTime>10/15/2018 21:48:04</publishTime>
     </File>
     <File Include="Views/Shared/_PartialGaleri.cshtml">
       <publishTime>10/14/2018 19:12:37</publishTime>
@@ -3352,7 +3352,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/14/2018 19:12:33</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/15/2018 20:20:12</publishTime>
+      <publishTime>10/15/2018 21:48:04</publishTime>
     </File>
   </ItemGroup>
 </Project>
