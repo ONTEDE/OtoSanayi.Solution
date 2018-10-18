@@ -16,7 +16,7 @@
                         <div class="entry-thumbnail">
                             @if (item.KategoriResim != null)
                             {
-                                <a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID"><img class="img-responsive" width="75" height="75" src="~/img/Firma/@item.KategoriResim" alt="@item.KategoriAciklama"></a>
+                                <a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID"><img class="img-responsive"  src="~/img/Firma/@item.KategoriResim" alt="@item.KategoriAciklama"></a>
                             }
                             else
                             {
@@ -27,9 +27,7 @@
                     </div>
                     <div class="post-content media-body">
                         <div class="entry-meta">
-                            <ul>
-                                <li><a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID"> @item.KategoriAdi</a></li>
-                            </ul>
+                           
                         </div><!-- /.entry-meta -->
                         <h2 class="entry-title">
                             <a href="/Firma/FirmaListele/@AdGetir.LinkAd(item.KategoriAdi)/@item.ID">@item.KategoriAciklama</a>

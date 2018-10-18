@@ -76,35 +76,15 @@
                                             </li>
 
                                             <li class="dropdown">
-                                                <a data-toggle="dropdown" href="#"><i class="fa fa-clone" aria-hidden="true"></i>FİRMALAR</a>
+                                                <a data-toggle="dropdown" href="#"><i class="fa fa-car" aria-hidden="true"></i>FİRMALAR</a>
                                                 <ul class="sub-menu">
                                                     @Html.Action("FirmaKategoriDoldur", "Firma")
                                                 </ul>
                                             </li>
-                                            <li>@*<a href="#"><i class="fa fa-clone" aria-hidden="true"></i>HİZMETLER</a>*@</li>
                                             <li><a href="/Duyuru/DuyuruListele"><i class="fa fa-bullhorn" aria-hidden="true"></i>DUYURULAR</a></li>
-
-                                            @*<li class="dropdown">
-                                                <a data-toggle="dropdown" href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>MEVZUAT</a>
-                                                <ul class="sub-menu">
-                                                    @Html.Action("MevzuatKategoriDoldur", "Mevzuat")
-                                                </ul>
-                                            </li>*@
-                                            @*<li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>MEVZUAT</a></li>*@
-
                                             <li><a href="/Link/LinkListele"><i class="fa fa-link" aria-hidden="true"></i>LİNKLER</a></li>
                                             <li> <a href="/iletişim"><i class="fa fa-map-marker" aria-hidden="true"></i>İLETİŞİM</a></li>
-                                            @*<li class="dropdown">
-                                                <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>İLETİŞİM</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="#">Contact Page</a></li>
-                                                    <li><a href="#">Contact Page-1</a></li>
-                                                </ul>
-                                            </li>*@
-
-                                            <!-- <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
-                                            <li><a href="register.html"><i class="fa fa-registered" aria-hidden="true"></i>ÜYELİK</a></li>
-                                            <li><a href="404.html"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>HATA SAYFALARI</a></li> -->
+                                            
                                         </ul>
                                     </div>
                                 </nav><!-- /navbar -->
@@ -157,8 +137,7 @@
 
 
                         @RenderSection("AnaSlider", required: false)
-                        @*</div><!-- /#home-carousel -->
-                            </div><!-- /.tr-home-slider -->*@
+                       
 
                         <div class="row">
                             <div class="col-sm-12">
@@ -175,12 +154,11 @@
                 <div class="container">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">ANA SAYFA</a></li>
-                        <li><a href="#">KURUMSAL</a></li>
-                        <li><a href="#">HİZMETLER</a></li>
-                        <li><a href="#">DUYURULAR</a></li>
-                        @*<li><a href="#">MEVZUAT</a></li>*@
-                        <li><a href="#">LİNKLER</a></li>
-                        <li><a href="#">İLETİŞİM</a></li>
+                        <li><a href="/Kurumsal/DetayGetir/BAŞKANIN-MESAJI/1">KURUMSAL</a></li>
+                        <li><a href="/Firma/FirmaListele/TÜMÜ/4">FİRMALAR</a></li>
+                        <li><a href="/Duyuru/DuyuruListele">DUYURULAR</a></li>
+                        <li><a href="/Link/LinkListele">LİNKLER</a></li>
+                        <li><a href="/iletişim">İLETİŞİM</a></li>
                     </ul>
                 </div>
             </div>
@@ -201,16 +179,7 @@
                             <div class="widget  widget-menu-2">
                                 <h2>KURUMSAL</h2>
                                 <ul>
-                                    @*<li><a href="#">Hakkımızda</a></li>
-                                    <li><a href="#">Başkanın Mesajı</a></li>
-                                    <li><a href="#">Misyon Vizyon</a></li>
-                                    <li><a href="#">Yönetim Kurulu</a></li>
-                                    <li><a href="#">Kariyer</a></li>
-
-                                    <li><a href="#">Kalite Politikamız</a></li>
-                                    <li><a href="#">Basında T.O.S.S</a></li>
-                                    <li><a href="#">Fotoğraflar T.O.S.S</a></li>
-                                    <li><a href="#">Organizasyon Şeması</a></li>*@
+                                  
                                     @Html.Action("KurumsalKategoriDoldur1", "Kurumsal")
 
                                 </ul>
@@ -220,10 +189,7 @@
                             <div class="widget widget-menu-2">
                                 <h2>T.O.S.S' DE NELER YAPABİLİRSİNİZ ?</h2>
                                 <ul>
-                                    @*<li><a href="#">Oto Kaporta Boya</a></li>
-                                    <li><a href="#">Oto Elektrik</a></li>
-                                    <li><a href="#">Oto Mekanik</a></li>
-                                    <li><a href="#">Oto Yedek Parça</a></li>*@
+                                   
                                     @Html.Action("FirmaKategoriDoldur1", "Firma")
 
                                 </ul>
