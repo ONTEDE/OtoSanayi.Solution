@@ -25,6 +25,11 @@ namespace OtoSanayi.WepApp
                  defaults: new { controller = "Home", action = "Login" }
              );
             routes.MapRoute(
+                 name: "HataSayfasi",
+                 url: "HataSayfasi",
+                 defaults: new { controller = "Home", action = "AccessDenied" }
+             );
+            routes.MapRoute(
                 name: "Iletisim",
                 url: "iletişim",
                 defaults: new { controller = "Iletisim", action = "Index" }
