@@ -1,4 +1,5 @@
-﻿@using OtoSanayi.WepApp.Models
+﻿@using System.Web.Optimization
+@using OtoSanayi.WepApp.Models
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -11,7 +12,7 @@
     <title>TOSS | Teknik Oto Sanayi Sitesi</title>
 
      @*CSS*@ 
-    <link href="~/Content/plugins/footable/footable.core.css" rel="stylesheet" />
+    @*<link href="~/Content/plugins/footable/footable.core.css" rel="stylesheet" />
     <link href="~/Content/css/animate.css" rel="stylesheet" />
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Content/font-awesome.min.css">
@@ -19,9 +20,9 @@
     <link rel="stylesheet" href="~/Content/slick.css">
     <link rel="stylesheet" href="~/Content/jplayer.css">
     <link rel="stylesheet" href="~/Content/main.css">
-    <link rel="stylesheet" href="~/Content/responsive.css">
+    <link rel="stylesheet" href="~/Content/responsive.css">*@
 
- @*<link rel="stylesheet" href="~/Content/all">*@
+ @Styles.Render("~/Content/all");
     
 
     <!-- font -->
@@ -44,7 +45,7 @@
     <!-- Template Developed By ThemeRegion -->
 </head>
 <body>
-   
+
     <div class="main-wrapper">
         <div class="main-wrapper tr-page-top homepage">
             <div class="container-fluid">
@@ -84,7 +85,7 @@
                                             <li><a href="/Duyuru/DuyuruListele"><i class="fa fa-bullhorn" aria-hidden="true"></i>DUYURULAR</a></li>
                                             <li><a href="/Link/LinkListele"><i class="fa fa-link" aria-hidden="true"></i>LİNKLER</a></li>
                                             <li> <a href="/iletişim"><i class="fa fa-map-marker" aria-hidden="true"></i>İLETİŞİM</a></li>
-                                            
+
                                         </ul>
                                     </div>
                                 </nav><!-- /navbar -->
@@ -102,7 +103,7 @@
                                 </div><!-- breaking-news -->
                             </div><!-- /.topbar-left -->
                             <div class="topbar-right">
-                                @if (CurrentUser.GetUser()!="default")
+                                @if (CurrentUser.GetUser() != "default")
                                 {
                                     <div class="user">
                                         <div class="user-image">
@@ -124,7 +125,7 @@
                                         <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                        
+
                                     </ul>
                                     <div class="search">
                                         <form role="form">
@@ -137,7 +138,7 @@
 
 
                         @RenderSection("AnaSlider", required: false)
-                       
+
 
                         <div class="row">
                             <div class="col-sm-12">
@@ -179,7 +180,7 @@
                             <div class="widget  widget-menu-2">
                                 <h2>KURUMSAL</h2>
                                 <ul>
-                                  
+
                                     @Html.Action("KurumsalKategoriDoldur1", "Kurumsal")
 
                                 </ul>
@@ -189,7 +190,7 @@
                             <div class="widget widget-menu-2">
                                 <h2>T.O.S.S' DE NELER YAPABİLİRSİNİZ ?</h2>
                                 <ul>
-                                   
+
                                     @Html.Action("FirmaKategoriDoldur1", "Firma")
 
                                 </ul>
@@ -212,20 +213,21 @@
             </div>
         </footer><!-- /#footer -->
         <!-- JS -->
-        <script src="~/scripts/js/jquery.min.js"></script>
-       
-        <script src="~/scripts/bootstrap.min.js"></script>
-        <script src="~/scripts/js/marquee.js"></script>
-        <script src="~/scripts/js/moment.min.js"></script>
-        <script src="~/scripts/js/theia-sticky-sidebar.js"></script>
-        <script src="~/scripts/js/jquery.jplayer.min.js"></script>
-        <script src="~/scripts/js/jplayer.playlist.min.js"></script>
-        <script src="~/scripts/js/slick.min.js"></script>
-        <script src="~/scripts/js/carouFredSel.js"></script>
-        <script src="~/scripts/js/jquery.magnific-popup.js"></script>
-        <script src="~/scripts/js/main.js"></script>
-        <script src="~/scripts/Admin/plugins/footable/footable.all.min.js"></script>
-        @*<script src="~/js/all"></script>*@
+        @*<script src="~/scripts/js/jquery.min.js"></script>
+
+            <script src="~/scripts/bootstrap.min.js"></script>
+            <script src="~/scripts/js/marquee.js"></script>
+            <script src="~/scripts/js/moment.min.js"></script>
+            <script src="~/scripts/js/theia-sticky-sidebar.js"></script>
+            <script src="~/scripts/js/jquery.jplayer.min.js"></script>
+            <script src="~/scripts/js/jplayer.playlist.min.js"></script>
+            <script src="~/scripts/js/slick.min.js"></script>
+            <script src="~/scripts/js/carouFredSel.js"></script>
+            <script src="~/scripts/js/jquery.magnific-popup.js"></script>
+            <script src="~/scripts/js/main.js"></script>
+            <script src="~/scripts/Admin/plugins/footable/footable.all.min.js"></script>*@
+        @Scripts.Render("~/scripts/all");
+
         <!-- <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -237,13 +239,13 @@
 
         </script> -->
 
-       <script>
+        <script>
            $(document).ready(function () {
 
                $('.footable').footable();
                $('.footable2').footable();
 
            });
-       </script>
+        </script>
 </body>
 </html>

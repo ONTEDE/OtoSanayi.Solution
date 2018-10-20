@@ -25,7 +25,7 @@ namespace OtoSanayi.WepApp
 
 
             //Js Script Bundles
-            bundles.Add(new ScriptBundle("~/js/all").
+            bundles.Add(new ScriptBundle("~/scripts/all").
                 Include("~/scripts/js/jquery.min.js").
                 Include("~/scripts/bootstrap.min.js").
                 Include("~/scripts/js/marquee.js").
