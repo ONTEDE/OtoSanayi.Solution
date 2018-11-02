@@ -59,9 +59,9 @@
                         <tr class="gradeX">
 
                             <td>
-                                @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a>*@
+                                <b><a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.FirmaAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a></b>
 
-                                <b> @item.FirmaAdi</b>
+                                @*<b> @item.FirmaAdi</b>*@
                             </td>
                             @*<td class="col-md-5">*@
                                 @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
@@ -82,7 +82,13 @@
                            
                             <td>@item.Adres</td>
 
-                            <td><a href="tel://@item.FirmaTel">@item.FirmaTel</a></td>
+                            <td>
+                                @foreach (var itm in item.FirmaTel.Split(';'))
+                                {
+                                    <a href="tel://@itm">@itm</a><br />
+
+                                }
+                            </td>
 
 </tr>
                     }

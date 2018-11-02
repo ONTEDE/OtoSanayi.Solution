@@ -260,6 +260,13 @@ namespace OtoSanayi.WepApp.Controllers
                 //frm.FirmaKategoriID = model.FirmaKategoriID;
                 frm.FirmaLink = model.Firma.FirmaLink;
                 frm.FirmaTel = model.Firma.FirmaTel;
+                frm.FirmaMail = model.Firma.FirmaMail;
+
+                frm.FirmaFace = model.Firma.FirmaFace;
+                frm.FirmaTwitter = model.Firma.FirmaTwitter;
+                frm.FirmaGoogle = model.Firma.FirmaGoogle;
+                frm.FirmaInstagram = model.Firma.FirmaInstagram;
+
                 int res = _managerFirma.Update(frm);
 
                 if (res == 0)

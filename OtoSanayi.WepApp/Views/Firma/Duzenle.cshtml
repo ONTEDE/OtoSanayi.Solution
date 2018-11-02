@@ -88,6 +88,13 @@
                 @Html.ValidationMessageFor(model => model.Firma.FirmaAdi, "", new { @class = "text-danger" })
             </div>
         </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.FirmaYetkili, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Firma.FirmaYetkili, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaYetkili, "", new { @class = "text-danger" })
+            </div>
+        </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Firma.FirmaTel, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -127,6 +134,42 @@
                 @Html.ValidationMessageFor(model => model.Firma.FirmaLink, "", new { @class = "text-danger" })
             </div>
         </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.FirmaMail, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Firma.FirmaMail, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaMail, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.FirmaFace, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Firma.FirmaFace, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaFace, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.FirmaTwitter, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Firma.FirmaTwitter, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaTwitter, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.FirmaGoogle, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Firma.FirmaGoogle, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaGoogle, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firma.FirmaInstagram, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Firma.FirmaInstagram, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Firma.FirmaInstagram, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
         <div class="form-group">
             @Html.LabelFor(model => model.Firma.Logo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-sm-10">

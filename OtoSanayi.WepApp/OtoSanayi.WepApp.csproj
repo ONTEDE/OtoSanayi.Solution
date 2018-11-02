@@ -143,6 +143,7 @@
   <ItemGroup>
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\FirmaDetay.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\jplayer.css" />
     <Content Include="Content\magnific-popup.css" />
@@ -694,8 +695,10 @@
     <Content Include="fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\TOSS.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\FirmaDetay.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\jquery.blueimp-gallery.min.js" />
     <Content Include="scripts\js\bootstrap.min.js" />
     <Content Include="scripts\js\carouFredSel.js" />
     <Content Include="scripts\js\jplayer.playlist.min.js" />
