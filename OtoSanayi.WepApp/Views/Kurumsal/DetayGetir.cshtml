@@ -25,9 +25,13 @@
 
             }
         }
-        else if (Model.Kurumsalkategori.KategoriAdi == "RESİMLERLE T.O.S.S")
+        else if (Model.Kurumsalkategori.KategoriAdi == "FOTOĞRAFLARLA T.O.S.S")
         {
             @Html.Partial("_PartiallightBoxGallery",Model.Resimler)
+        }
+        else if (Model.Kurumsalkategori.KategoriAdi == "ORGANİZASYON ŞEMASI")
+        {
+            @Html.Partial("_PartialOrganizasyon", Model)
         }
 
         else
@@ -40,13 +44,13 @@
 
             }
         }
-
+        @if (Model.Kurumsalkategori.KategoriAdi != "ORGANİZASYON ŞEMASI") { 
         <div class="col-md-12">
 
             <h4>@Model.Baslik</h4>
             @Html.Raw(Model.Icerik)
         </div>
-
+        }
 
 
 

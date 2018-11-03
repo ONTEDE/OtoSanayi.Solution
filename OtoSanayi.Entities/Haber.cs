@@ -18,7 +18,7 @@ namespace OtoSanayi.Entities
         public int ID { get; set; }
         [Required, DisplayName("Haber Başlığı"), StringLength(300, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
         public string HaberBaslik { get; set; }
-        [Required, DisplayName("Haber Kısa İçeriği"), StringLength(150, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
+        [Required, DisplayName("Haber Kısa İçeriği")]
         public string KisaHaberIcerik { get; set; }
 
         [Required, DisplayName("Haber İçeriği")]

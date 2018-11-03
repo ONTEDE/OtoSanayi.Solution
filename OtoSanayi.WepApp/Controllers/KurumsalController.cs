@@ -315,7 +315,7 @@ namespace OtoSanayi.WepApp.Controllers
         {
             //int id = _managerKurumKategori.Find(x=>x.KategoriAdi=="RESİMLERLE TOSS").ID;
 
-            return PartialView("_PartialResimGalerisi", _managerKurumResim.List().Where(x => x.kurumsal.Kurumsalkategori.KategoriAdi == "RESİMLERLE T.O.S.S").OrderByDescending(x => x.ID).ToList());
+            return PartialView("_PartialResimGalerisi", _managerKurumResim.List().Where(x => x.kurumsal.Kurumsalkategori.KategoriAdi == "FOTOĞRAFLARLA T.O.S.S").OrderByDescending(x => x.ID).ToList());
         }
         public PartialViewResult KurumsalKategoriDoldur()
         {

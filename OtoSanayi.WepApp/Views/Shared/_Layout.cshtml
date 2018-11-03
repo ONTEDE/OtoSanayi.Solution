@@ -227,6 +227,15 @@
         <script src="~/scripts/js/main.js"></script>
         <script src="~/scripts/Admin/plugins/footable/footable.all.min.js"></script>*@
     @Scripts.Render("~/scripts/all")
+    <script>
+        $(document).ready(function () {
+
+            $('.footable').footable();
+            $('.footable2').footable();
+
+        });
+    </script>
+
     <script src="~/scripts/Admin/inspinia.js"></script>
     <script src="~/scripts/Admin/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
 
@@ -243,14 +252,7 @@
 
     </script> -->
 
-    <script>
-        $(document).ready(function () {
-
-            $('.footable').footable();
-            $('.footable2').footable();
-
-        });
-    </script>
+   
 </body>
 
 </html>

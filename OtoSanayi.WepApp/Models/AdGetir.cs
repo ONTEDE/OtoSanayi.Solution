@@ -28,7 +28,7 @@ namespace OtoSanayi.WepApp.Models
 
             return a;
         }
-
+        
         public static string UzunAd(string a)
         {
 
@@ -40,8 +40,19 @@ namespace OtoSanayi.WepApp.Models
 
             return a;
         }
+        public static string BaskanMesaj(string a)
+        {
 
-        
+            if (a.Length > 320)
+            {
+                return a.Substring(0, 319) + " ...";
+
+            }
+
+            return a;
+        }
+
+
         public static string ResimAd(string a)
         {
             char[] karakterler=new char[]{'?','*','%','!','/','$','&' };

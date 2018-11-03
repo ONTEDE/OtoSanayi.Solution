@@ -259,9 +259,10 @@ namespace OtoSanayi.WepApp.Controllers
                 //frm.Kategori = kat;
                 //frm.FirmaKategoriID = model.FirmaKategoriID;
                 frm.FirmaLink = model.Firma.FirmaLink;
+                frm.Aktif = model.Firma.Aktif;
                 frm.FirmaTel = model.Firma.FirmaTel;
                 frm.FirmaMail = model.Firma.FirmaMail;
-
+                frm.FirmaHarita = model.Firma.FirmaHarita;
                 frm.FirmaFace = model.Firma.FirmaFace;
                 frm.FirmaTwitter = model.Firma.FirmaTwitter;
                 frm.FirmaGoogle = model.Firma.FirmaGoogle;
@@ -570,7 +571,7 @@ namespace OtoSanayi.WepApp.Controllers
             List<Firma> frm = _managerFirmaKategoriBag.List(x => x.FirmaKategori.ID == id).Select(x => x.Firma).ToList();
             if (id == 0)
             {
-                frm = _managerFirma.List();
+                frm = _managerFirma.List().OrderBy(x=>x.FirmaAdi).ToList();
             }
             if (frm == null) { return new HttpStatusCodeResult(HttpStatusCode.BadRequest); }
 
@@ -606,12 +607,12 @@ namespace OtoSanayi.WepApp.Controllers
             List<Firma> firmalar = new List<Firma>();
             if (katid >0)
             {
-                firmalar = _managerFirmaKategoriBag.List(x => x.FirmaKategori.ID == katid && x.Firma.FirmaAdi.StartsWith(harf)).Select(x => x.Firma).ToList();
+                firmalar = _managerFirmaKategoriBag.List(x => x.FirmaKategori.ID == katid && x.Firma.FirmaAdi.StartsWith(harf)).Select(x => x.Firma).ToList().OrderBy(x=>x.FirmaAdi).ToList();
                 
             }
             else
             {
-                firmalar = _managerFirma.List(x => x.FirmaAdi.StartsWith(harf));
+                firmalar = _managerFirma.List(x => x.FirmaAdi.StartsWith(harf)).OrderBy(x=>x.FirmaAdi).ToList();
 
             }
 

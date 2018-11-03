@@ -1135,6 +1135,7 @@
     <Content Include="Views\Kurumsal\_PartiallightBoxGallery.cshtml" />
     <Content Include="Views\Haber\_PartiallightBoxGallery.cshtml" />
     <Content Include="Views\Haber\HaberListele.cshtml" />
+    <Content Include="Views\Kurumsal\_PartialOrganizasyon.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
