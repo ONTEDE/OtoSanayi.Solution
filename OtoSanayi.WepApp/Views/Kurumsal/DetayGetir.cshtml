@@ -8,19 +8,47 @@
     <div class="section-title">
         <h1><span><a href="#">@Model.Kurumsalkategori.KategoriAdi</a></span></h1>
     </div>
-    
+
 
 </div>
 
-<div class="tr-section theiaStickySidebar" style="padding:40px;" >
+<div class="tr-section theiaStickySidebar" style="padding:40px;">
     <h2 class="center-block"></h2>
     <div class="row">
-        @Html.Partial("_PartialResimGalerisi", Model.Resimler)
+        @if (Model.Kurumsalkategori.KategoriAdi == "BAŞKANIN MESAJI")
+        {
+            foreach (var item in Model.Resimler)
+            {
+                <div class="col-md-12 ">
+                    <img class="img-responsive center-block" src="~/img/Kurum/@item.ResimYol" />
+                </div>
+
+            }
+        }
+        else if (Model.Kurumsalkategori.KategoriAdi == "RESİMLERLE T.O.S.S")
+        {
+            @Html.Partial("_PartiallightBoxGallery",Model.Resimler)
+        }
+
+        else
+        {
+            foreach (var item in Model.Resimler)
+            {
+                <div class="col-md-12 ">
+                    @Html.Partial("_PartialResimGalerisi", Model.Resimler)
+                </div>
+
+            }
+        }
+
+        <div class="col-md-12">
+
             <h4>@Model.Baslik</h4>
             @Html.Raw(Model.Icerik)
+        </div>
 
 
 
 
-        </div>   
+    </div>
 </div>

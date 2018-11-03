@@ -1132,6 +1132,9 @@
     <Content Include="Views\Shared\_PartialFooterFirmaMenuGetir.cshtml" />
     <Content Include="Views\Iletisim\Index.cshtml" />
     <Content Include="Views\Firma\_PartialFirmalariGetir.cshtml" />
+    <Content Include="Views\Kurumsal\_PartiallightBoxGallery.cshtml" />
+    <Content Include="Views\Haber\_PartiallightBoxGallery.cshtml" />
+    <Content Include="Views\Haber\HaberListele.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

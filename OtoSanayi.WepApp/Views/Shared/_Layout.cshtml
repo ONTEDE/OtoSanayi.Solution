@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="~/Content/responsive.css">*@
 
  @Styles.Render("~/Content/all")
-    
+    <link href="~/Content/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet" />
 
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
@@ -227,6 +227,9 @@
         <script src="~/scripts/js/main.js"></script>
         <script src="~/scripts/Admin/plugins/footable/footable.all.min.js"></script>*@
     @Scripts.Render("~/scripts/all")
+    <script src="~/scripts/Admin/inspinia.js"></script>
+    <script src="~/scripts/Admin/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
+
     @RenderSection("JSdosya",required:false)
    
     <!-- <script>

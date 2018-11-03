@@ -212,6 +212,10 @@ namespace OtoSanayi.WepApp.Controllers
 
             return PartialView("_PartialResimListele", resimlist);
         }
+        public ActionResult HaberListele()
+        {
+            return View(_managerHaber.List().OrderByDescending(x=>x.ID).ToList());
+        }
 
         public PartialViewResult AnaHaberGetir()
         {

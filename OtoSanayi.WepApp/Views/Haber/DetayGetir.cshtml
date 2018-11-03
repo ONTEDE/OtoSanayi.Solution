@@ -3,21 +3,24 @@
     ViewBag.Title = "DetayGetir";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<div class="section-title">
+    <h1><span><a href="#">@Model.HaberBaslik</a></span></h1>
+</div>
 <div class="tr-section theiaStickySidebar" style="padding:40px;">
     <h2 class="center-block"></h2>
     <div class="row">
+       
+        <div class="col-md-12">
+            <h4>@Model.KisaHaberIcerik</h4>
+            @Html.Raw(Model.HaberIcerik)
+        </div>
+        
+
         <div class="bg-transparent">
-            <div class="section-title">
-                <h1><span><a href="#">@Model.HaberBaslik</a></span></h1>
-            </div>
-            @Html.Partial("_PartialResimGalerisi", Model.haberResimler)
+
+            @Html.Partial("_PartiallightBoxGallery", Model.haberResimler)
 
         </div>
-
-        <h4>@Model.KisaHaberIcerik</h4>
-        @Html.Raw(Model.HaberIcerik)
-
     </div>
 </div>
 

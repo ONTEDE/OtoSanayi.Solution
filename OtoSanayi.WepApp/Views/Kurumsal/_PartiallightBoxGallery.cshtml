@@ -1,0 +1,32 @@
+﻿@using OtoSanayi.Entities
+@model List<KurumsalResim>
+
+<div class="lightBoxGallery">
+    @{int ayrac = 0; }
+    @foreach (var item in Model)
+    {
+        ayrac++;
+        <div class="col-md-3 col-xs-6">
+            <a href="~/img/Kurum/@item.ResimYol" title="@item.kurumsal.Kurumsalkategori.KategoriAdi" data-gallery="">
+                <img class="img-thumbnail" src="~/img/Kurum/@item.ResimYol">
+            </a>
+        </div>
+        if (ayrac % 4 == 0)
+        {
+            <div class="row"></div>
+        }
+    }
+
+
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+</div>
