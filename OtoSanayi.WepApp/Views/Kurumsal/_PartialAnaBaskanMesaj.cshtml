@@ -12,7 +12,7 @@
 					
                     @if (Model.Resimler != null && Model.Resimler.Count() > 0 && Model.Resimler[0] != null)
                     {
-                        <a href="/Kurumsal/DetayGetir/@AdGetir.LinkAd(Model.Baslik)/@Model.ID"><img class="img-responsive" src="~/img/Kurum/@Model.Resimler[0].ResimYol" alt="Image"></a>
+                        <a href="/Kurumsal/DetayGetir/@AdGetir.LinkAd(Model.Baslik)/@Model.ID"><img class="img-responsive img-rounded" src="~/img/Kurum/@Model.Resimler[0].ResimYol" alt="Image"></a>
                     }
                     else
                     {
