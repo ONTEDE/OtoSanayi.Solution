@@ -39,8 +39,6 @@
                                                 <a href="#">@item</a><br />
 
                                             }
-
-                                            <a href="#">@Model.FirmaYetkili</a>
                                         </h2>
                                     </div>
                                 </li>
@@ -121,12 +119,15 @@
                             <h1><a href="#">@Model.FirmaAdi HAKKINDA</a></h1>
                         </div>
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#hakkimizda" data-toggle="tab">Hakkımızda</a></li>
-                            <li role="presentation"><a href="#foto" data-toggle="tab">Fotoğraflar</a></li>
+                            <li role="presentation" class="active"><a href="#hakkimizda" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Hakkımızda</a></li>
+                            <li role="presentation"><a href="#foto" data-toggle="tab"><span class="glyphicon glyphicon-picture">&nbsp;</span>Fotoğraflar</a></li>
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active fade in" id="hakkimizda">
-                                @Html.Raw(Model.Aciklama)
+                                                                   
+                                 @Html.Raw(Model.Aciklama)
+                                   
+                                
 
                             </div>
                             <div role="tabpanel" class="tab-pane fade in" id="foto">
@@ -141,12 +142,19 @@
 
 
                                                     <div class="lightBoxGallery">
+                                                        @{int ayrac = 0; }
                                                         @foreach (var item in Model.FirmaResimler)
-                                                                {
-                                                            <div class="col-md-4 col-xs-6">
-                                                                <a href="~/img/Firma/@item.ResimYol" title="@Model.FirmaAdi" data-gallery=""><img class="img-responsive" src="~/img/Firma/@item.ResimYol"></a>
-
+                                                        {
+                                                            ayrac++;
+                                                            <div class="col-md-3 col-xs-6">
+                                                                <a href="~/img/Firma/@item.ResimYol" title="@Model.FirmaAdi" data-gallery="">
+                                                                    <img class="img-thumbnail" src="~/img/Firma/@item.ResimYol">
+                                                                </a>
                                                             </div>
+                                                            if (ayrac % 4 == 0)
+                                                            {
+                                                                <div class="row"></div>
+                                                            }
                                                         }
 
 
@@ -193,4 +201,8 @@
     </div>
 </div><!-- row -->
 
+@section JSdosya{
 
+    <script src="~/scripts/Admin/inspinia.js"></script>
+    <script src="~/scripts/Admin/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
+}
