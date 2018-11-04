@@ -1,4 +1,5 @@
 ﻿@using OtoSanayi.Entities
+@using OtoSanayi.WepApp.Models
 @model List<Firma>
 
 @foreach (var item in Model)
@@ -6,30 +7,43 @@
     <tr class="gradeX">
 
         <td>
-            @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a>*@
 
-            <b> @item.FirmaAdi</b>
+            @if (item.Aktif == true)
+            {
+                <b><a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.FirmaAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a></b>
+            }
+            else
+            {
+                <b> @item.FirmaAdi</b>
+            }
         </td>
-        <td class="col-md-6">
+        @*<td class="col-md-6">
             @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
 
-            @*<a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+        @*<a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
 
-            <div class="row">
+        @*  <div class="row">
 
-                @foreach (var itm in item.KategoriFirma)
-                {
-                    @itm.FirmaKategori.KategoriAdi.ToLower();
-                    @(" , ")
-                }
-            </div>
+                    @foreach (var itm in item.KategoriFirma)
+                    {
+                        @itm.FirmaKategori.KategoriAdi.ToLower();
+                        @(" , ")
+                    }
+                </div>
 
-        </td>
+            </td>*@
 
-       
+
         <td>@item.Adres</td>
 
-        <td>@item.FirmaTel</td>
+        <td>
+            @foreach (var itm in item.FirmaTel.Split(';'))
+            {
+                <a href="tel://@itm">@itm</a><br />
+                break;
+
+            }
+        </td>
 
     </tr>
 }

@@ -19,19 +19,20 @@
 <div class="tr-section theiaStickySidebar" style="padding:40px;">
     <h2 class="center-block"></h2>
     <div class="row">
-        
+
 
 
         <div class="ibox-content">
-            <div class="row">
-                @{ List<char> harfler = new List<char> { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'Y', 'Z' };
+            <h2 class="entry-title" style="text-align:center">
+
+                @{ List<char> harfler = new List<char> { 'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'H', 'I', 'İ', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'R', 'S', 'Ş', 'T', 'U', 'Ü', 'V', 'W', 'Y', 'Z' };
                     int katID = ViewBag.KategoriID;
                 }
                 @foreach (var item in harfler)
                 {
                     if (item != 'Z')
                     {
-                        <a href="#" onclick="FirmalarıGetir('@item','@katID')"><strong>@(item+" -")</strong></a>
+                        <a href="#" onclick="FirmalarıGetir('@item','@katID')"><strong>@(item + " -")</strong></a>
                     }
                     else
                     {
@@ -40,7 +41,7 @@
 
                 }
                 <hr />
-            </div>
+            </h2>
 
             <table class="footable table table-stripped" data-page-size="30" data-filter=#filter>
                 <thead>
@@ -58,16 +59,21 @@
                         <tr class="gradeX">
 
                             <td>
-                                @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a>*@
-
-                                <b> @item.FirmaAdi</b>
+                                @if (item.Aktif == true)
+                                {
+                                    <b><a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.FirmaAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a></b>
+                                }
+                                else
+                                {
+                                    <b> @item.FirmaAdi</b>
+                                }
                             </td>
-                            @*<td class="col-md-5">*@
-                                @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+                          @*<td class="col-md-5">*@
+                            @*<a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.Kategori.KategoriAdi)/@item.ID" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
 
-                                @*<a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
+                            @*<a href="#" title="@item.KisaAciklama"><img height="50" width="60" src="~/img/Firma/@item.Logo" /></a>*@
 
-                             @*<div class="row">
+                            @*<div class="row">
 
                                     @foreach (var itm in item.KategoriFirma)
                                     {
@@ -78,10 +84,16 @@
 
                             @*</td>*@
 
-                           
+
                             <td>@item.Adres</td>
 
-                            <td>@item.FirmaTel</td>
+                            <td>
+                                @foreach (var itm in item.FirmaTel.Split(';'))
+                                {
+                                    <a href="tel://@itm">@itm</a><br />
+                                    break;
+                                }
+                            </td>
 
                         </tr>
                     }

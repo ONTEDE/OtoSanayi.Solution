@@ -40,3 +40,17 @@ C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\En
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Release\OtoSanayi.DataAccessLayer.csprojResolveAssemblyReference.cache
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Release\OtoSanayi.DataAccessLayer.dll
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Release\OtoSanayi.DataAccessLayer.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\OtoSanayi.DataAccessLayer.dll.config
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\OtoSanayi.DataAccessLayer.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\OtoSanayi.DataAccessLayer.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\EntityFramework.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\OtoSanayi.Core.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\OtoSanayi.Entities.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\OtoSanayi.Core.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\EntityFramework.xml
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Release\OtoSanayi.DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Release\OtoSanayi.DataAccessLayer.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.DataAccessLayer\obj\Release\OtoSanayi.DataAccessLayer.pdb

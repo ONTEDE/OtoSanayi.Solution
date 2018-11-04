@@ -23,3 +23,13 @@ C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFra
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.csprojResolveAssemblyReference.cache
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.dll
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.dll.config
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\OtoSanayi.Entities.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.xml
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.csprojResolveAssemblyReference.cache
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.pdb
