@@ -2,38 +2,202 @@
 @{
     ViewBag.Title = "DetayGetir";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
 
-<div class="tr-section theiaStickySidebar" style="padding:40px;">
-    <h2 class="center-block"></h2>
-    <div class="row">
-        <div class="bg-transparent">
-            <div class="section-title">
-                <h1><span><a href="#">@Model.FirmaAdi</a></span></h1>
-            </div>
-            @Html.Partial("_PartialResimGalerisi", Model.FirmaResimler)
 
+
+
+<div class="tr-section bg-transparent">
+    <div class="section-title">
+        <h1><span><a href="#">@Model.FirmaAdi</a></span></h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3 tr-sidebar tr-sticky">
+            <div class="theiaStickySidebar">
+                <div class="tr-section ">
+                    <a href="#"><img class="img-responsive" src="~/img/Firma/@Model.Logo" alt="Image"></a>
+                </div><!-- /.tr-post -->
+                <div class="tr-widget meta-widget">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation"><a href="#comment" data-toggle="tab"><i class="fa fa-info"></i>Bilgiler</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active fade in" id="comment">
+                            <ul class="comment-list">
+                                <li>
+                                    <div class="post-content">
+                                        <div class="entry-meta">
+                                            <span><a href="#">Yetkili</a></span>
+                                        </div>
+                                        <h2 class="entry-title">
+                                            @foreach (var item in Model.FirmaYetkili.Split(';'))
+                                            {
+                                                <a href="#">@item</a><br />
+
+                                            }
+                                        </h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-content">
+                                        <div class="entry-meta">
+                                            <span><a href="#">Telefonlar</a></span>
+                                        </div>
+                                        <h2 class="entry-title">
+                                            @foreach (var item in Model.FirmaTel.Split(';'))
+                                            {
+                                                <a href="tel://@item">@item</a><br />
+
+                                            }
+                                        </h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-content">
+                                        <div class="entry-meta">
+                                            <span><a href="#">Adres</a></span>
+                                        </div>
+                                        <h2 class="entry-title">
+                                            <a href="#">@Model.Adres</a>
+                                        </h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-content">
+                                        <div class="entry-meta">
+                                            <span><a href="#">Web Sitesi</a></span>
+                                        </div>
+                                        <h2 class="entry-title">
+
+                                            @foreach (var item in Model.FirmaLink.Split(';'))
+                                            {
+                                                <a href="http://@item">@item</a><br />
+
+                                            }
+                                        </h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="post-content">
+                                        <div class="entry-meta">
+                                            <span><a href="#">Mail Adresi</a></span>
+                                        </div>
+                                        <h2 class="entry-title">
+                                            @foreach (var item in Model.FirmaMail.Split(';'))
+                                            {
+                                                <a href="#">@item</a><br />
+                                            }
+
+
+                                        </h2>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- meta-tab -->
+
+            </div><!-- /.theiaStickySidebar -->
         </div>
-        <table>
-            <tr>
-                <td><b>Firma Adı:</b></td>
-                <td>@Model.FirmaAdi</td>
-            </tr>
-            <tr>
-                <td><b>Telefon Numarası:</b></td>
-                <td>@Model.FirmaTel</td>
-            </tr>
-            <tr>
-                <td><b>İnternet Sitesi:</b></td>
-                <td><a href="@Model.FirmaLink" target="_blank">@Model.FirmaLink</a></td>
-            </tr>
-            <tr>
-                <td><b>Firma Logo</b></td>
-                <td><img  src="~/img/Firma/@Model.Logo" width="50" height="50"/></td>
-            </tr>
-        </table>
-        @Html.Raw(Model.Aciklama)
+        <div class="col-sm-9">
+            <div class="tr-content">
+                <div class="tr-widget meta-widget">
+                    <ul class="feed pull-right">
+                        <li><a href="@Model.FirmaFace" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="@Model.FirmaTwitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="@Model.FirmaInstagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="@Model.FirmaGoogle" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                    <div class="tr-section local-events">
+                        <div class="section-title title-before">
+                            <h1><a href="#">@Model.FirmaAdi HAKKINDA</a></h1>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#hakkimizda" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Hakkımızda</a></li>
+                            <li role="presentation"><a href="#foto" data-toggle="tab"><span class="glyphicon glyphicon-picture">&nbsp;</span>Fotoğraflar</a></li>
+                           
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active fade in" id="hakkimizda">
+                                                                   
+                                 @Html.Raw(Model.Aciklama)
+                                   
+                                
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade in" id="foto">
+                                <div class="post-inner-image text-center">
+                                    @*----------------------------------------*@
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="ibox float-e-margins">
+
+                                                <div class="ibox-content">
+
+                                                    <div class="lightBoxGallery">
+                                                        @{int ayrac = 0; }
+                                                        @foreach (var item in Model.FirmaResimler)
+                                                        {
+                                                            ayrac++;
+                                                            <div class="col-md-3 col-xs-6">
+                                                                <a href="~/img/Firma/@item.ResimYol" title="@Model.FirmaAdi" data-gallery="">
+                                                                    <img class="img-thumbnail" src="~/img/Firma/@item.ResimYol">
+                                                                </a>
+                                                            </div>
+                                                            if (ayrac % 4 == 0)
+                                                            {
+                                                                <div class="row"></div>
+                                                            }
+                                                        }
+
+
+                                                        <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                                                        <div id="blueimp-gallery" class="blueimp-gallery">
+                                                            <div class="slides"></div>
+                                                            <h3 class="title"></h3>
+                                                            <a class="prev">‹</a>
+                                                            <a class="next">›</a>
+                                                            <a class="close">×</a>
+                                                            <a class="play-pause"></a>
+                                                            <ol class="indicator"></ol>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    @*-------------------------------------------------*@
+
+
+                                </div>
+
+
+
+                            </div>
+                            
+                        </div><!-- meta-tab -->
+                    </div><!-- meta-tab -->
+                </div><!-- /.business-section -->
+
+
+
+
+
+
+            </div><!-- /.tr-content -->
+        </div>
 
 
     </div>
-</div>
+</div><!-- row -->

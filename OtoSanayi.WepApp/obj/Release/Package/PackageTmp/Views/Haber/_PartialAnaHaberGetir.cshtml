@@ -21,7 +21,7 @@
 }
 <div class="tr-section">
     <div class="section-title title-before">
-        <h1><a href="#">SİTEMİZDEN HABERLER</a></h1>
+        <h1><a href="/Haber/HaberListele">SİTEMİZDEN HABERLER</a></h1>
     </div>
     @if (bhaber != null)
     {
@@ -30,7 +30,7 @@
                 <div class="entry-thumbnail">
                     @if (bhaber.haberResimler != null && bhaber.haberResimler.Count() != 0&& bhaber.haberResimler[0] != null)
                     {
-                        <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID"><img class="" height="293" src="~/img/Haber/@bhaber.haberResimler[0].ResimYol" alt="Image"></a>
+                        <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID"><img class="img-responsive" src="~/img/Haber/@bhaber.haberResimler[0].ResimYol" alt="Image"></a>
                     }
                     else
                     {

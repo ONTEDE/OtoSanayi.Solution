@@ -13,3 +13,8 @@ C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\bin\Release\OtoSanayi.Cor
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Release\OtoSanayi.Core.csprojResolveAssemblyReference.cache
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Release\OtoSanayi.Core.dll
 C:\Users\HRN\Desktop\OtoSanayi.Solution\OtoSanayi.Core\obj\Release\OtoSanayi.Core.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\bin\Release\OtoSanayi.Core.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\bin\Release\OtoSanayi.Core.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\obj\Release\OtoSanayi.Core.csprojResolveAssemblyReference.cache
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\obj\Release\OtoSanayi.Core.dll
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Core\obj\Release\OtoSanayi.Core.pdb

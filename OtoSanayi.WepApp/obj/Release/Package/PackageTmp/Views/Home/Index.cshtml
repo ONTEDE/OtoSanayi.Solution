@@ -35,13 +35,7 @@
             <a href="#"><img class="img-responsive" src="~/img/ai/1.jpg" alt="Image"></a>
         </div><!-- /.add -->
 
-        <div class="tr-section bg-transparent sports-section">
-            <div class="section-title">
-                <h1><span><a href="#">HABERLER</a></span></h1>
-            </div>
-            @Html.Action("AnaHaberGetir","Haber")
-
-        </div><!-- /.sports-section -->
+      
 
         <div class="tr-section bg-transparent">
             <div class="section-title">
@@ -53,9 +47,17 @@
             </div><!-- /.row -->
         </div><!-- /.life-style-section -->
 
+        <div class="tr-section bg-transparent sports-section">
+            <div class="section-title">
+                <h1><span><a href="/Haber/HaberListele">HABERLER</a></span></h1>
+            </div>
+            @Html.Action("AnaHaberGetir", "Haber")
+
+        </div><!-- /.sports-section -->
+
         <div class="tr-section bg-transparent">
             <div class="section-title">
-                <h1><span><a href="#"></a>Resimlerle T.O.S.S</span></h1>
+                <h1><span><a href="#"></a>FOTOĞRAFLARLA T.O.S.S</span></h1>
             </div>
            @Html.Action("AnaResimGalerisiGetir","Kurumsal")
         </div><!-- /.photo-gallery-section -->
