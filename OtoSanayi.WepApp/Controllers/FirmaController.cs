@@ -259,6 +259,7 @@ namespace OtoSanayi.WepApp.Controllers
                 //frm.Kategori = kat;
                 //frm.FirmaKategoriID = model.FirmaKategoriID;
                 frm.FirmaLink = model.Firma.FirmaLink;
+                frm.FirmaYetkili = model.Firma.FirmaYetkili;
                 frm.Aktif = model.Firma.Aktif;
                 frm.FirmaTel = model.Firma.FirmaTel;
                 frm.FirmaMail = model.Firma.FirmaMail;
