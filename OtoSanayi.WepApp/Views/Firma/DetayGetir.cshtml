@@ -123,11 +123,13 @@
                             <h1><a href="#">@Model.FirmaAdi HAKKINDA</a></h1>
                         </div>
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#hakkimizda" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Hakkımızda</a></li>
-                            <li role="presentation"><a href="#foto" data-toggle="tab"><span class="glyphicon glyphicon-picture">&nbsp;</span>Fotoğraflar</a></li>
+                            <li role="presentation"><a href="#hakkimizda" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Hakkımızda</a></li>
+                            <li role="presentation" class="active"><a href="#foto" data-toggle="tab"><span class="glyphicon glyphicon-picture">&nbsp;</span>Fotoğraflar</a></li>
 
                         </ul>
                         <div class="tab-content">
+                           
+
                             <div role="tabpanel" class="tab-pane fade in" id="hakkimizda">
 
                                 @Html.Raw(Model.Aciklama)
@@ -135,6 +137,7 @@
 
 
                             </div>
+
                             <div role="tabpanel" class="tab-pane active fade in" id="foto">
                                 <div class="post-inner-image text-center">
                                     @*----------------------------------------*@
