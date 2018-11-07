@@ -568,10 +568,10 @@ namespace OtoSanayi.WepApp.Controllers
             }
             //List<Firma> frm = new List<Firma>();
             ViewBag.KategoriID = id;
-            List<Firma> frm = _managerFirmaKategoriBag.List(x => x.FirmaKategori.ID == id).Select(x => x.Firma).ToList();
+            List<Firma> frm = _managerFirmaKategoriBag.List(x => x.FirmaKategori.ID == id).Select(x => x.Firma).OrderByDescending(x=>x.Aktif).ThenBy(x=>x.FirmaAdi).ToList();
             if (id == 0)
             {
-                frm = _managerFirma.List().OrderBy(x=>x.FirmaAdi).ToList();
+                frm = _managerFirma.List().OrderByDescending(x => x.Aktif).ThenBy(x => x.FirmaAdi).ToList();
             }
             if (frm == null) { return new HttpStatusCodeResult(HttpStatusCode.BadRequest); }
 
@@ -607,7 +607,7 @@ namespace OtoSanayi.WepApp.Controllers
             List<Firma> firmalar = new List<Firma>();
             if (katid >0)
             {
-                firmalar = _managerFirmaKategoriBag.List(x => x.FirmaKategori.ID == katid && x.Firma.FirmaAdi.StartsWith(harf)).Select(x => x.Firma).ToList().OrderBy(x=>x.FirmaAdi).ToList();
+                firmalar = _managerFirmaKategoriBag.List(x => x.FirmaKategori.ID == katid && x.Firma.FirmaAdi.StartsWith(harf)).Select(x => x.Firma).ToList().OrderByDescending(x => x.Aktif).ThenBy(x => x.FirmaAdi).ToList();
                 
             }
             else
