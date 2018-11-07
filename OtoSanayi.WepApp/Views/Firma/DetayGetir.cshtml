@@ -76,7 +76,7 @@
                                             {
                                                 foreach (var item in Model.FirmaLink.Split(';'))
                                                 {
-                                                    <a href="http://@item" target="_blank">@item</a><br />
+                                                    <a href="http://@item">@item</a><br />
 
                                                 }
                                             }
@@ -128,14 +128,14 @@
 
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade in" id="hakkimizda">
+                            <div role="tabpanel" class="tab-pane active fade in" id="hakkimizda">
 
                                 @Html.Raw(Model.Aciklama)
 
 
 
                             </div>
-                            <div role="tabpanel" class="tab-pane active fade in" id="foto">
+                            <div role="tabpanel" class="tab-pane fade in" id="foto">
                                 <div class="post-inner-image text-center">
                                     @*----------------------------------------*@
 
