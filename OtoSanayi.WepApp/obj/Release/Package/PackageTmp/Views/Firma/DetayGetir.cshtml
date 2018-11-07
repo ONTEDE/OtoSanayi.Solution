@@ -72,13 +72,11 @@
                                             <span><a href="#">Web Sitesi</a></span>
                                         </div>
                                         <h2 class="entry-title">
-                                            @if (Model.FirmaLink != null)
-                                            {
-                                                foreach (var item in Model.FirmaLink.Split(';'))
-                                                {
-                                                    <a href="http://@item" target="_blank">@item</a><br />
 
-                                                }
+                                            @foreach (var item in Model.FirmaLink.Split(';'))
+                                            {
+                                                <a href="http://@item">@item</a><br />
+
                                             }
                                         </h2>
                                     </div>
@@ -89,13 +87,11 @@
                                             <span><a href="#">Mail Adresi</a></span>
                                         </div>
                                         <h2 class="entry-title">
-                                            @if (Model.FirmaMail != null)
+                                            @foreach (var item in Model.FirmaMail.Split(';'))
                                             {
-                                                foreach (var item in Model.FirmaMail.Split(';'))
-                                                {
-                                                    <a href="#">@item</a><br />
-                                                }
+                                                <a href="#">@item</a><br />
                                             }
+
 
                                         </h2>
                                     </div>
@@ -125,17 +121,17 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#hakkimizda" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Hakkımızda</a></li>
                             <li role="presentation"><a href="#foto" data-toggle="tab"><span class="glyphicon glyphicon-picture">&nbsp;</span>Fotoğraflar</a></li>
-
+                           
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade in" id="hakkimizda">
-
-                                @Html.Raw(Model.Aciklama)
-
-
+                            <div role="tabpanel" class="tab-pane active fade in" id="hakkimizda">
+                                                                   
+                                 @Html.Raw(Model.Aciklama)
+                                   
+                                
 
                             </div>
-                            <div role="tabpanel" class="tab-pane active fade in" id="foto">
+                            <div role="tabpanel" class="tab-pane fade in" id="foto">
                                 <div class="post-inner-image text-center">
                                     @*----------------------------------------*@
 
@@ -189,7 +185,7 @@
 
 
                             </div>
-
+                            
                         </div><!-- meta-tab -->
                     </div><!-- meta-tab -->
                 </div><!-- /.business-section -->

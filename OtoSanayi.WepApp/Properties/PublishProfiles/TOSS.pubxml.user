@@ -55,19 +55,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:10</publishTime>
     </File>
     <File Include="bin/OtoSanayi.BusinessLayer.dll">
-      <publishTime>03/11/2018 23:58:05</publishTime>
+      <publishTime>11/03/2018 23:58:05</publishTime>
     </File>
     <File Include="bin/OtoSanayi.Core.dll">
-      <publishTime>03/11/2018 23:58:05</publishTime>
+      <publishTime>11/03/2018 23:58:05</publishTime>
     </File>
     <File Include="bin/OtoSanayi.DataAccessLayer.dll">
-      <publishTime>03/11/2018 23:58:05</publishTime>
+      <publishTime>11/03/2018 23:58:05</publishTime>
     </File>
     <File Include="bin/OtoSanayi.Entities.dll">
-      <publishTime>03/11/2018 23:58:05</publishTime>
+      <publishTime>11/03/2018 23:58:05</publishTime>
     </File>
     <File Include="bin/OtoSanayi.WepApp.dll">
-      <publishTime>11/06/2018 21:02:57</publishTime>
+      <publishTime>11/03/2018 23:58:10</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>10/19/2018 00:04:10</publishTime>
@@ -145,7 +145,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Content/FirmaDetay.css">
-      <publishTime>03/11/2018 12:58:24</publishTime>
+      <publishTime>11/03/2018 12:58:24</publishTime>
     </File>
     <File Include="Content/font-awesome.min.css">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -157,7 +157,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Content/main.css">
-      <publishTime>03/11/2018 22:16:03</publishTime>
+      <publishTime>11/03/2018 22:16:03</publishTime>
     </File>
     <File Include="Content/patterns/3.png">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -2173,7 +2173,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:09</publishTime>
     </File>
     <File Include="scripts/FirmaDetay.js">
-      <publishTime>03/11/2018 12:58:24</publishTime>
+      <publishTime>11/03/2018 12:58:24</publishTime>
     </File>
     <File Include="scripts/jquery-1.10.2.js">
       <publishTime>10/19/2018 00:04:09</publishTime>
@@ -2185,7 +2185,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:09</publishTime>
     </File>
     <File Include="scripts/jquery.blueimp-gallery.min.js">
-      <publishTime>03/11/2018 12:58:24</publishTime>
+      <publishTime>11/03/2018 12:58:24</publishTime>
     </File>
     <File Include="scripts/js/bootstrap.min.js">
       <publishTime>10/19/2018 00:04:09</publishTime>
@@ -3091,19 +3091,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Firma/Detay.cshtml">
-      <publishTime>03/11/2018 23:19:38</publishTime>
+      <publishTime>11/03/2018 23:19:38</publishTime>
     </File>
     <File Include="Views/Firma/DetayGetir.cshtml">
-      <publishTime>11/06/2018 21:02:40</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Firma/Duzenle.cshtml">
-      <publishTime>03/11/2018 23:23:30</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Firma/Ekle.cshtml">
-      <publishTime>03/11/2018 23:23:30</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Firma/FirmaListele.cshtml">
-      <publishTime>03/11/2018 23:23:30</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Firma/Index.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3118,10 +3118,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Firma/_PartialFirmalariGetir.cshtml">
-      <publishTime>03/11/2018 23:23:30</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Firma/_PartialResimGalerisi.cshtml">
-      <publishTime>03/11/2018 23:19:38</publishTime>
+      <publishTime>11/03/2018 23:19:38</publishTime>
     </File>
     <File Include="Views/Firma/_PartialResimListele.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3130,7 +3130,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Haber/DetayGetir.cshtml">
-      <publishTime>03/11/2018 15:30:22</publishTime>
+      <publishTime>11/03/2018 15:30:22</publishTime>
     </File>
     <File Include="Views/Haber/Duzenle.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3139,16 +3139,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Haber/HaberListele.cshtml">
-      <publishTime>03/11/2018 15:30:22</publishTime>
+      <publishTime>11/03/2018 15:30:22</publishTime>
     </File>
     <File Include="Views/Haber/Index.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Haber/_PartialAnaHaberGetir.cshtml">
-      <publishTime>03/11/2018 15:30:22</publishTime>
+      <publishTime>11/03/2018 15:30:22</publishTime>
     </File>
     <File Include="Views/Haber/_PartiallightBoxGallery.cshtml">
-      <publishTime>03/11/2018 15:30:22</publishTime>
+      <publishTime>11/03/2018 15:30:22</publishTime>
     </File>
     <File Include="Views/Haber/_PartialResimGalerisi.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3193,7 +3193,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2018 11:38:21</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>11/04/2018 01:12:32</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Home/Login.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3232,7 +3232,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Iletisim/Index.cshtml">
-      <publishTime>11/05/2018 02:24:03</publishTime>
+      <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Kullanici/Duzenle.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3247,7 +3247,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Kurumsal/DetayGetir.cshtml">
-      <publishTime>03/11/2018 23:23:30</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Kurumsal/Duzenle.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3268,16 +3268,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Kurumsal/_PartialAnaBaskanMesaj.cshtml">
-      <publishTime>03/11/2018 23:23:30</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Kurumsal/_PartiallightBoxGallery.cshtml">
-      <publishTime>03/11/2018 15:30:22</publishTime>
+      <publishTime>11/03/2018 15:30:22</publishTime>
     </File>
     <File Include="Views/Kurumsal/_PartialOrganizasyon.cshtml">
-      <publishTime>11/05/2018 00:20:48</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Kurumsal/_PartialResimGalerisi.cshtml">
-      <publishTime>03/11/2018 15:30:22</publishTime>
+      <publishTime>11/03/2018 15:30:22</publishTime>
     </File>
     <File Include="Views/Kurumsal/_PartialResimListele.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3292,7 +3292,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Link/LinkListele.cshtml">
-      <publishTime>11/05/2018 02:36:56</publishTime>
+      <publishTime>11/03/2018 18:31:31</publishTime>
     </File>
     <File Include="Views/Mevzuat/DetayGetir.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3325,7 +3325,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>11/04/2018 21:38:16</publishTime>
+      <publishTime>11/03/2018 23:23:30</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutAdmin.cshtml">
       <publishTime>10/21/2018 01:36:24</publishTime>
@@ -3346,7 +3346,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Views/Shared/_PartialFooterFirmaMenuGetir.cshtml">
-      <publishTime>03/11/2018 12:58:24</publishTime>
+      <publishTime>11/03/2018 12:58:24</publishTime>
     </File>
     <File Include="Views/Shared/_PartialGaleri.cshtml">
       <publishTime>10/19/2018 00:04:06</publishTime>
@@ -3385,7 +3385,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/19/2018 00:04:06</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/11/2018 23:58:13</publishTime>
+      <publishTime>11/03/2018 23:58:13</publishTime>
     </File>
   </ItemGroup>
 </Project>
