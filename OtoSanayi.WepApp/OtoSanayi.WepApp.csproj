@@ -710,6 +710,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811031951579_InitialCreate.cs" />
+    <Compile Include="Migrations\201811031951579_InitialCreate.Designer.cs">
+      <DependentUpon>201811031951579_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AdGetir.cs" />
     <Compile Include="Models\CurrentUser.cs" />
     <Compile Include="Models\KategoriFirmaViewModel.cs" />
@@ -874,14 +879,19 @@
     <Folder Include="scripts\tinymce\themes\modern\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OtoSanayi.BusinessLayer\OtoSanayi.BusinessLayer.csproj">
-      <Project>{047B3A9D-60D6-4FF3-93DD-4EDF03C6C74D}</Project>
-      <Name>OtoSanayi.BusinessLayer</Name>
+    <ProjectReference Include="..\OtoSanayi.DataAccessLayer\OtoSanayi.DataAccessLayer.csproj">
+      <Project>{569D29E6-68A7-4A82-BA3A-DE3AA4158C9D}</Project>
+      <Name>OtoSanayi.DataAccessLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\OtoSanayi.Entities\OtoSanayi.Entities.csproj">
       <Project>{C11AEABA-E64F-4F99-9943-B49BF7115216}</Project>
       <Name>OtoSanayi.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811031951579_InitialCreate.resx">
+      <DependentUpon>201811031951579_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

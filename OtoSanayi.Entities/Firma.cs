@@ -33,8 +33,6 @@ namespace OtoSanayi.Entities
         public string KisaAciklama { get; set; }
         [DisplayName("Firma Açıklama")]
         public string Aciklama { get; set; }
-        [DisplayName("Firma Harita")]
-        public string FirmaHarita { get; set; }
 
         [DisplayName("Firma Logo"), StringLength(100, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
         public string Logo { get; set; }

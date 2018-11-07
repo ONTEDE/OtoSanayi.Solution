@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OtoSanayi.Entities
 {
-    [Table("TOSS_FirmaKategori")]
+    [Table("TOSS_FirmaKategori1")]
     public class Firma_Kategori1
     {
         [Required,DatabaseGenerated(DatabaseGeneratedOption.Identity)]

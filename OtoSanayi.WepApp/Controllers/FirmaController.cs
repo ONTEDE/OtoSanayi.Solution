@@ -1,4 +1,4 @@
-﻿using OtoSanayi.BusinessLayer;
+﻿using OtoSanayi.DataAccessLayer;
 using OtoSanayi.Entities;
 using OtoSanayi.WepApp.Filter;
 using OtoSanayi.WepApp.Models;
@@ -263,7 +263,6 @@ namespace OtoSanayi.WepApp.Controllers
                 frm.Aktif = model.Firma.Aktif;
                 frm.FirmaTel = model.Firma.FirmaTel;
                 frm.FirmaMail = model.Firma.FirmaMail;
-                frm.FirmaHarita = model.Firma.FirmaHarita;
                 frm.FirmaFace = model.Firma.FirmaFace;
                 frm.FirmaTwitter = model.Firma.FirmaTwitter;
                 frm.FirmaGoogle = model.Firma.FirmaGoogle;
