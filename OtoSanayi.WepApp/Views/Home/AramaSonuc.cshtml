@@ -6,8 +6,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="bg-transparent">
+    <div class="section-title">
+        <h1><span><a href="#">Arama Sonuçları</a></span></h1>
+    </div>
+
+</div>
+
 
 <div class="tr-section theiaStickySidebar" style="padding:40px;">
+@if (Model.firmalist.Count == 0 && Model.haberlist.Count == 0 && Model.ilanlist.Count == 0 && Model.duyurulist.Count == 0)
+{
+    <h3 class="center-block">Herhangi Bir Sonuç Bulunamamıştır!!</h3>
+}
+
 @if (Model.firmalist.Count > 0)
 {
     <h3 class="center-block">Bulunan Firmalar</h3>
