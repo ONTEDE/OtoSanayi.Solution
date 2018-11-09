@@ -8,6 +8,8 @@
 
 
 <div class="tr-section theiaStickySidebar" style="padding:40px;">
+@if (Model.firmalist.Count > 0)
+{
     <h3 class="center-block">Bulunan Firmalar</h3>
     <div class="ibox-content">
 
@@ -23,7 +25,7 @@
             </thead>
             <tbody id="firmalar">
                 @foreach (var item in Model.firmalist)
-            {
+                {
                     <tr class="gradeX">
 
                         <td>
@@ -60,6 +62,8 @@
         </table>
 
     </div>
+
+}
 
     @if (Model.haberlist.Count > 0)
     {
