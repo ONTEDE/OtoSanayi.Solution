@@ -716,6 +716,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AdGetir.cs" />
+    <Compile Include="Models\AraViewModels.cs" />
     <Compile Include="Models\CurrentUser.cs" />
     <Compile Include="Models\KategoriFirmaViewModel.cs" />
     <Compile Include="Models\ViewIlan.cs" />
@@ -834,6 +835,7 @@
     <Content Include="Views\Haber\_PartiallightBoxGallery.cshtml" />
     <Content Include="Views\Haber\HaberListele.cshtml" />
     <Content Include="Views\Kurumsal\_PartialOrganizasyon.cshtml" />
+    <Content Include="Views\Home\AramaSonuc.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

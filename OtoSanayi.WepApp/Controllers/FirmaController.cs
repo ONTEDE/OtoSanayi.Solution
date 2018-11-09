@@ -619,5 +619,7 @@ namespace OtoSanayi.WepApp.Controllers
 
             return PartialView("_PartialFirmalariGetir", firmalar);
         }
+
+       
     }
 }

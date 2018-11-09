@@ -11,6 +11,10 @@ namespace OtoSanayi.WepApp.Controllers
     public class HomeController : Controller
     {
         UserManager _managerUser = new UserManager();
+        FirmaManager _managerFirma = new FirmaManager();
+        HaberManager _managerHaber = new HaberManager();
+        IlanManager _managerIlan = new IlanManager();
+        DuyuruManager _managerDuyuru = new DuyuruManager();
         // GET: Home
         public ActionResult Index()
         {
@@ -53,7 +57,20 @@ namespace OtoSanayi.WepApp.Controllers
             return View("AccessDenied");
         }
 
+        public ActionResult AramaSonuc(string ara)
+        {
+            AraViewModels result = new AraViewModels();
+            if (ara != null)
+            {
+                result.firmalist = _managerFirma.List(x => x.FirmaAdi.Contains(ara));
+                result.haberlist = _managerHaber.List(x => x.HaberBaslik.Contains(ara)||x.HaberIcerik.Contains(ara));
+                result.ilanlist = _managerIlan.List(x => x.Baslik.Contains(ara) || x.Aciklama.Contains(ara));
+                result.duyurulist = _managerDuyuru.List(x => x.DuyuruBaslik.Contains(ara) || x.DuyuruIcerik.Contains(ara));
 
+            }
+
+            return View(result);
+        }
 
     }
 }

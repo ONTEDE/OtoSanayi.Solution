@@ -120,9 +120,10 @@
 
                                     </ul>
                                     <div class="search">
-                                        <form role="form">
-                                            <input type="text" class="search-form" autocomplete="off" placeholder="Ara">
-                                        </form>
+                                            @using (Html.BeginForm("AramaSonuc", "Home"))
+                                            {
+                                           <input type="text" name="ara" class="search-form" autocomplete="off" placeholder="Ara">
+                                            }
                                     </div> <!--/.search-->
                                 </div>
                             </div><!-- /.topbar-right -->
