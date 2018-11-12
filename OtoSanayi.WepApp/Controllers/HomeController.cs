@@ -4,8 +4,11 @@ using OtoSanayi.WepApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
+using System.Xml;
+
 namespace OtoSanayi.WepApp.Controllers
 {
     public class HomeController : Controller
@@ -18,7 +21,6 @@ namespace OtoSanayi.WepApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
-           
            
             return View();
         }
@@ -72,5 +74,59 @@ namespace OtoSanayi.WepApp.Controllers
             return View(result);
         }
 
+        public void SiteMapOlustur() {
+            DatabaseContext Veri = new DatabaseContext();
+
+            Response.Clear();
+            //Response.ContentTpye ile bu Action'ın View'ını XML tabanlı olarak ayarlıyoruz.
+            Response.ContentType = "text/xml";
+            XmlTextWriter xr = new XmlTextWriter(Response.OutputStream, Encoding.UTF8);
+            xr.WriteStartDocument();
+            xr.WriteStartElement("urlset");//urlset etiketi açıyoruz
+            xr.WriteAttributeString("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
+            xr.WriteAttributeString("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
+            xr.WriteAttributeString("xsi:schemaLocation", "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd");
+            /* sitemap dosyamızın olmazsa olmazını ekledik. Şeması bu dedik buraya kadar.  */
+
+            xr.WriteStartElement("url");
+            xr.WriteElementString("loc", "http://teknikotosanayi.com/");
+            xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
+            xr.WriteElementString("changefreq", "daily");
+            xr.WriteElementString("priority", "1");
+            xr.WriteEndElement();
+
+            //Burada veritabanımızdaki Firmaları SiteMap'e ekliyoruz.
+            var s = Veri.Firmalar;
+            foreach (var a in s)
+            {
+                xr.WriteStartElement("url");
+                xr.WriteElementString("loc", "http://teknikotosanayi.com/" + "Firma/DetayGetir/"+@AdGetir.LinkAd(a.FirmaAdi).ToString()+"/"+a.ID);
+                xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
+                xr.WriteElementString("priority", "0.5");
+                xr.WriteElementString("changefreq", "monthly");
+                xr.WriteEndElement();
+            }
+
+            //Aynı şekilde burada da Haberleri SiteMap'e ekliyoruz.
+            var k = Veri.Haberler;
+            foreach (var b in k)
+            {
+                xr.WriteStartElement("url");
+                xr.WriteElementString("loc", "http://teknikotosanayi.com//Haber/DetayGetir/"+@AdGetir.LinkAd(b.HaberBaslik)+"/" + b.ID);
+                xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
+                xr.WriteElementString("priority", "1");
+                xr.WriteElementString("changefreq", "monthly");
+                xr.WriteEndElement();
+            }
+
+            xr.WriteEndDocument();
+            //urlset etiketini kapattık
+            xr.Flush();
+            xr.Close();
+            Response.End();
+        }
+
+
     }
+
 }
