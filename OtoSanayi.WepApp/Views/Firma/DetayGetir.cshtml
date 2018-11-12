@@ -1,12 +1,21 @@
 ﻿@model OtoSanayi.Entities.Firma
 @{
-    ViewBag.Title = "DetayGetir";
+    ViewBag.Title = Model.FirmaAdi + " | ";
+    foreach(var item in Model.KategoriFirma)
+    { ViewBag.Title+=item.FirmaKategori.KategoriAdi.ToLower() + " | ";
+    }
+    ViewBag.Title += "teknikotosanayi.com";
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
-
-
-
+@section metaekle{
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="@Model.FirmaAdi">
+<meta name="description" content="@Html.Raw(Model.KisaAciklama.ToString())">    
+    
+    }
 
 <div class="tr-section bg-transparent">
     <div class="section-title">

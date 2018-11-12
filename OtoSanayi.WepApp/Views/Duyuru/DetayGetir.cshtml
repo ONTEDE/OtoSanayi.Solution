@@ -1,8 +1,7 @@
 ﻿@using OtoSanayi.Entities
 @model List<Duyuru>
 
-@{
-    ViewBag.Title = "DetayGetir";
+@{   
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -12,6 +11,7 @@
        
         @foreach (var item in Model)
         {
+            ViewBag.Title = @item.DuyuruBaslik;
 
             <h4>@item.DuyuruBaslik</h4><br />
             <small>@item.DuyuruTarih.ToShortDateString()</small>
