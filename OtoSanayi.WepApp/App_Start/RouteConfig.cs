@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OtoSanayi.Entities;
+using OtoSanayi.WepApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,11 +11,30 @@ namespace OtoSanayi.WepApp
 {
     public class RouteConfig
     {
+
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            
+            SeoFirmaListele list = new SeoFirmaListele();
+          
+            foreach (var item in list.firmaGetir())
+            {
+                routes.MapRoute(
+                 name: AdGetir.LinkAd(item.SeoName).ToString(),
+                 url: AdGetir.LinkAd(item.SeoName).ToString(),
+                 defaults: new { controller = "Firma", action = "DetayGetir", id = item.ID }
+             );
+            }
+
+            //   routes.MapRoute(
+            //    name: "Aslı-Kafe",
+            //    url: "Aslı-Kafe",
+            //    defaults: new { controller = "Firma", action = "DetayGetir",id="5" }
+            //);
+
+
+
             routes.MapRoute(
                   name: "Anasayfa",
                   url: "Anasayfa",
@@ -42,10 +63,10 @@ namespace OtoSanayi.WepApp
             routes.MapRoute(
                    name: "Default2",
                    url: "{controller}/{action}/{Aciklama}/{id}",
-                   defaults: new { controller = "Home", action = "Index", Aciklama="TOSS", id = UrlParameter.Optional }
+                   defaults: new { controller = "Home", action = "Index", Aciklama = "TOSS", id = UrlParameter.Optional }
                );
 
-          
+
 
         }
     }

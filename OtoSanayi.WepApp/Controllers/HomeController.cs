@@ -18,6 +18,8 @@ namespace OtoSanayi.WepApp.Controllers
         HaberManager _managerHaber = new HaberManager();
         IlanManager _managerIlan = new IlanManager();
         DuyuruManager _managerDuyuru = new DuyuruManager();
+
+        
         // GET: Home
         public ActionResult Index()
         {

@@ -1,4 +1,5 @@
-﻿@model OtoSanayi.Entities.Firma
+﻿@using OtoSanayi.WepApp.Models
+@model OtoSanayi.Entities.Firma
 @{
     ViewBag.Title = Model.FirmaAdi + " | ";
     foreach(var item in Model.KategoriFirma)
@@ -13,8 +14,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="@Model.FirmaAdi">
-<meta name="description" content="@Html.Raw(Model.KisaAciklama.ToString())">    
-    
+<meta name="description" content="@if (Model.Description!=null) {
+@Html.Raw(AdGetir.DescAd(Model.Description))
+} ">    
+
     }
 
 <div class="tr-section bg-transparent">
@@ -81,6 +84,7 @@
                                             <span><a href="#">Web Sitesi</a></span>
                                         </div>
                                         <h2 class="entry-title">
+                                            <a href="http://teknikotosanayi.com/@Model.SeoName">teknikotosanayi.com/@Model.SeoName</a><br />
                                             @if (Model.FirmaLink != null)
                                             {
                                                 foreach (var item in Model.FirmaLink.Split(';'))
@@ -89,6 +93,7 @@
 
                                                 }
                                             }
+                                            
                                         </h2>
                                     </div>
                                 </li>
