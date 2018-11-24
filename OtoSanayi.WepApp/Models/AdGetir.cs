@@ -97,8 +97,8 @@ namespace OtoSanayi.WepApp.Models
         }
         public static string DescAd(string a)
         {
-            char[] tr = new char[] { 'ç', 'ş', 'ü', 'ğ', 'ı', 'ö', '?', '*', '%', '!', '/', '$', '&', ' ' };
-            char[] eng = new char[] { 'c', 's', 'u', 'g', 'i', 'o', '-', '-', '-', '-', '-', '-', '-', '-' };
+            char[] tr = new char[] {  '?', '*', '%', '!', '/', '$', '&', ' ' };
+            char[] eng = new char[] { '-', '-', '-', '-', '-', '-', '-', '-' };
             try
             {
                 a = a.Trim().ToLower();

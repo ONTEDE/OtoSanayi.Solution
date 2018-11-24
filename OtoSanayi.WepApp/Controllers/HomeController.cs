@@ -23,7 +23,7 @@ namespace OtoSanayi.WepApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
-           
+            SiteMapOlustur();
             return View();
         }
         public ActionResult Login()
@@ -104,7 +104,7 @@ namespace OtoSanayi.WepApp.Controllers
                 xr.WriteStartElement("url");
                 xr.WriteElementString("loc", "http://teknikotosanayi.com/" + "Firma/DetayGetir/"+@AdGetir.LinkAd(a.FirmaAdi).ToString()+"/"+a.ID);
                 xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
-                xr.WriteElementString("priority", "0.5");
+                xr.WriteElementString("priority", "0.90");
                 xr.WriteElementString("changefreq", "monthly");
                 xr.WriteEndElement();
             }
@@ -116,7 +116,7 @@ namespace OtoSanayi.WepApp.Controllers
                 xr.WriteStartElement("url");
                 xr.WriteElementString("loc", "http://teknikotosanayi.com//Haber/DetayGetir/"+@AdGetir.LinkAd(b.HaberBaslik)+"/" + b.ID);
                 xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
-                xr.WriteElementString("priority", "1");
+                xr.WriteElementString("priority", "0.90");
                 xr.WriteElementString("changefreq", "monthly");
                 xr.WriteEndElement();
             }

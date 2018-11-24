@@ -62,12 +62,12 @@
                 </div>
             </div>*@
         <div class="form-group">
-        @Html.LabelFor(model => model.Firma.Aktif, htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            @Html.CheckBoxFor(x => x.Firma.Aktif, new { @class = "form-check-input", })
-            @Html.ValidationMessageFor(model => model.Firma.Aktif, "", new { @class = "text-danger" })
+            @Html.LabelFor(model => model.Firma.Aktif, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.CheckBoxFor(x => x.Firma.Aktif, new { @class = "form-check-input", })
+                @Html.ValidationMessageFor(model => model.Firma.Aktif, "", new { @class = "text-danger" })
+            </div>
         </div>
-    </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Firma.FirmaAdi, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -100,7 +100,9 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Firma.Description, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Firma.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Firma.Description, new { htmlAttributes = new { @class = "form-control", @onkeydown = "descsay();", @onchange = "descsay();" } })
+
+                <div id="descsayi" class="alert alert-danger"></div>
                 @Html.ValidationMessageFor(model => model.Firma.Description, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -131,12 +133,12 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Firma.Aciklama, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextAreaFor(model => model.Firma.Aciklama, 7,70, new { @class = "form-control", id = "dene" })
+                @Html.TextAreaFor(model => model.Firma.Aciklama, 7, 70, new { @class = "form-control", id = "dene" })
                 @Html.ValidationMessageFor(model => model.Firma.Aciklama, "", new { @class = "text-danger" })
             </div>
         </div>
 
-       
+
         <div class="form-group">
             @Html.LabelFor(model => model.Firma.FirmaLink, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
@@ -204,3 +206,18 @@
         </div>
     </div>
                     }
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script>
+
+    function descsay() {
+
+        var desctext = $("#Firma_Description").val();
+
+        $("#descsayi").text(desctext.length.toString());
+
+    }
+
+
+
+
+</script>

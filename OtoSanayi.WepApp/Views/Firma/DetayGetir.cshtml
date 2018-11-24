@@ -2,23 +2,40 @@
 @model OtoSanayi.Entities.Firma
 @{
     ViewBag.Title = Model.FirmaAdi + " | ";
-    foreach(var item in Model.KategoriFirma)
-    { ViewBag.Title+=item.FirmaKategori.KategoriAdi.ToLower() + " | ";
+    foreach (var item in Model.KategoriFirma)
+    {
+        ViewBag.Title += item.FirmaKategori.KategoriAdi.ToLower() + " | ";
     }
     ViewBag.Title += "teknikotosanayi.com";
     Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
 @section metaekle{
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="author" content="@Model.FirmaAdi">
-<meta name="description" content="@if (Model.Description!=null) {
-@Html.Raw(AdGetir.DescAd(Model.Description))
-} ">    
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="@Model.FirmaAdi">
+    <meta name="keywords" content="@if (Model.Etiket != null) {
+    int sayac = 1;
+    int son = Model.Etiket.Split(';').Length;
+    foreach (var item in Model.Etiket.Split(';'))
+    {
+        if (sayac != son)
+        {
+            @(item.Trim() + ",");
+        }
+        else {
+            @(item.Trim());
+        }
+        sayac++;
     }
+}" />
+
+    <meta name="description" content="@if (Model.Description!=null) {
+@Html.Raw(AdGetir.DescAd(Model.Description))
+} ">
+
+}
 
 <div class="tr-section bg-transparent">
     <div class="section-title">
@@ -84,7 +101,7 @@
                                             <span><a href="#">Web Sitesi</a></span>
                                         </div>
                                         <h2 class="entry-title">
-                                            <a href="http://teknikotosanayi.com/@Model.SeoName">teknikotosanayi.com/@Model.SeoName</a><br />
+                                            <a href="http://teknikotosanayi.com/@Model.SeoName">/@Model.SeoName</a><br />
                                             @if (Model.FirmaLink != null)
                                             {
                                                 foreach (var item in Model.FirmaLink.Split(';'))
@@ -93,7 +110,7 @@
 
                                                 }
                                             }
-                                            
+
                                         </h2>
                                     </div>
                                 </li>
