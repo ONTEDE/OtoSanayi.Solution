@@ -14,7 +14,7 @@ namespace OtoSanayi.Entities
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
-        [DisplayName("Firma Resim"), StringLength(150, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
+        [DisplayName("Firma Resim")]
         public string ResimYol { get; set; }
         public int FirmaID { get; set; }
 

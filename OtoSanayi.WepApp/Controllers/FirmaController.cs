@@ -72,7 +72,7 @@ namespace OtoSanayi.WepApp.Controllers
                 {
                     try
                     {
-                        string filename = $"{AdGetir.LinkAd(model.Firma.FirmaAdi)}.{FirmaLogo.ContentType.Split('/')[1]}";
+                    string filename = $"{AdGetir.LinkAd(model.Firma.FirmaAdi)}.{FirmaLogo.ContentType.Split('/')[1]}";
                         FirmaLogo.SaveAs(Server.MapPath($"~/img/Firma/{filename}"));
                         model.Firma.Logo = filename;
 
@@ -117,7 +117,7 @@ namespace OtoSanayi.WepApp.Controllers
                             try
                             {
                                 FirmaResim rsm = new FirmaResim();
-                                string filename = $"{AdGetir.ResimAd(model.Firma.FirmaAdi)}.{file.ContentType.Split('/')[1]}";
+                                string filename = $"{AdGetir.ResimAd(model.Firma.KategoriFirma.FirstOrDefault(x=>x.ID>0).FirmaKategori.KategoriAdi + "-" + model.Firma.FirmaAdi)}.{file.ContentType.Split('/')[1]}";
                                 file.SaveAs(Server.MapPath($"~/img/Firma/{filename}"));
 
                                 rsm.ResimYol = filename;
@@ -319,7 +319,7 @@ namespace OtoSanayi.WepApp.Controllers
                             try
                             {
                                 FirmaResim rsm = new FirmaResim();
-                                string filename = $"{AdGetir.ResimAd(model.Firma.FirmaAdi)}.{file.ContentType.Split('/')[1]}";
+                                string filename = $"{AdGetir.ResimAd(frm.KategoriFirma.FirstOrDefault(x => x.ID > 0).FirmaKategori.KategoriAdi + "-" + model.Firma.FirmaAdi)}.{file.ContentType.Split('/')[1]}";
                                 file.SaveAs(Server.MapPath($"~/img/Firma/{filename}"));
 
                                 rsm.ResimYol = filename;
