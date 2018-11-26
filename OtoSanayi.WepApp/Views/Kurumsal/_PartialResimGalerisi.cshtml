@@ -21,7 +21,7 @@
         @foreach (var item in Model)
         {
             <li data-target="#photo-gallery" data-slide-to="@j" class="@if (j == 0) {@act; } ">
-                <img class="img-responsive" src="~/img/Kurum/@item.ResimYol" alt="Image">
+                <img class="img-responsive" src="~/img/Kurum/@item.ResimYol" alt="TOSS Fotoğraflar" title="TOSS Fotoğraflar">
             </li>
             j++;
         }

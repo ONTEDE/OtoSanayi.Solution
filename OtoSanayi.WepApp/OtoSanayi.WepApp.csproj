@@ -719,6 +719,7 @@
     <Compile Include="Models\AraViewModels.cs" />
     <Compile Include="Models\CurrentUser.cs" />
     <Compile Include="Models\KategoriFirmaViewModel.cs" />
+    <Compile Include="Models\SeoFirmaListele.cs" />
     <Compile Include="Models\ViewIlan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

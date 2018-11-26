@@ -3,6 +3,7 @@ using OtoSanayi.Entities;
 using OtoSanayi.WepApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -18,10 +19,13 @@ namespace OtoSanayi.WepApp.Controllers
         HaberManager _managerHaber = new HaberManager();
         IlanManager _managerIlan = new IlanManager();
         DuyuruManager _managerDuyuru = new DuyuruManager();
+
+        
         // GET: Home
         public ActionResult Index()
         {
            
+
             return View();
         }
         public ActionResult Login()
@@ -74,13 +78,17 @@ namespace OtoSanayi.WepApp.Controllers
             return View(result);
         }
 
-        public void SiteMapOlustur() {
+        public ActionResult SiteMapOlustur() {
             DatabaseContext Veri = new DatabaseContext();
 
             Response.Clear();
             //Response.ContentTpye ile bu Action'ın View'ını XML tabanlı olarak ayarlıyoruz.
             Response.ContentType = "text/xml";
-            XmlTextWriter xr = new XmlTextWriter(Response.OutputStream, Encoding.UTF8);
+            string xmlPath = Server.MapPath("~/sitemap.xml");
+            //Response.OutputStream
+            XmlTextWriter xr = new XmlTextWriter(xmlPath, Encoding.UTF8);
+            xr.Formatting = Formatting.Indented;
+
             xr.WriteStartDocument();
             xr.WriteStartElement("urlset");//urlset etiketi açıyoruz
             xr.WriteAttributeString("xmlns", "http://www.sitemaps.org/schemas/sitemap/0.9");
@@ -91,19 +99,19 @@ namespace OtoSanayi.WepApp.Controllers
             xr.WriteStartElement("url");
             xr.WriteElementString("loc", "http://teknikotosanayi.com/");
             xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
-            xr.WriteElementString("changefreq", "daily");
+            xr.WriteElementString("changefreq", "weekly");
             xr.WriteElementString("priority", "1");
             xr.WriteEndElement();
 
             //Burada veritabanımızdaki Firmaları SiteMap'e ekliyoruz.
-            var s = Veri.Firmalar;
+            var s = Veri.Firmalar.ToList();
             foreach (var a in s)
             {
                 xr.WriteStartElement("url");
-                xr.WriteElementString("loc", "http://teknikotosanayi.com/" + "Firma/DetayGetir/"+@AdGetir.LinkAd(a.FirmaAdi).ToString()+"/"+a.ID);
+                xr.WriteElementString("loc", "http://teknikotosanayi.com/" + "Firma/DetayGetir/"+@AdGetir.LinkAd(a.KategoriFirma.FirstOrDefault(x=>x.ID>0).FirmaKategori.KategoriAdi+"-"+a.FirmaAdi).ToString()+"/"+a.ID);
                 xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
-                xr.WriteElementString("priority", "0.5");
-                xr.WriteElementString("changefreq", "monthly");
+                xr.WriteElementString("priority", "0.90");
+                xr.WriteElementString("changefreq", "weekly");
                 xr.WriteEndElement();
             }
 
@@ -114,16 +122,20 @@ namespace OtoSanayi.WepApp.Controllers
                 xr.WriteStartElement("url");
                 xr.WriteElementString("loc", "http://teknikotosanayi.com//Haber/DetayGetir/"+@AdGetir.LinkAd(b.HaberBaslik)+"/" + b.ID);
                 xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
-                xr.WriteElementString("priority", "1");
-                xr.WriteElementString("changefreq", "monthly");
+                xr.WriteElementString("priority", "0.90");
+                xr.WriteElementString("changefreq", "weekly");
                 xr.WriteEndElement();
             }
 
             xr.WriteEndDocument();
+            
             //urlset etiketini kapattık
             xr.Flush();
             xr.Close();
             Response.End();
+
+            return View("Index");
+            
         }
 
 

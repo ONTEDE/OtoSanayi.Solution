@@ -55,16 +55,17 @@ namespace OtoSanayi.WepApp.Models
 
         public static string ResimAd(string a)
         {
-            char[] karakterler=new char[]{'?','*','%','!','/','$','&' };
+            char[] tr = new char[] { 'ç', 'ş', 'ü', 'ğ', 'ı', 'ö', '?', '*', '%', '!', '/', '$', '&', ' ' };
+            char[] eng = new char[] { 'c', 's', 'u', 'g', 'i', 'o', '-', '-', '-', '-', '-', '-', '-', '-' };
 
-            a = a.Replace(' ','-');
-            foreach (char item in karakterler)
+            a = a.Trim().ToLower();
+            for (int i = 0; i < tr.Length; i++)
             {
-                a.Replace(item,'-');
+                a = a.Replace(tr[i], eng[i]);
             }
-            if (a.Length > 45)
+            if (a.Length > 60)
             {
-                a= a.Substring(0, 45);
+                a = a.Substring(0, 59);
 
             }
             return a+"_"+Guid.NewGuid().ToString().Substring(0,5);
@@ -72,17 +73,46 @@ namespace OtoSanayi.WepApp.Models
         }
         public static string LinkAd(string a)
         {
-            char[] karakterler = new char[] { '?', '*', '%', '!', '/', '$', '&' };
-
-            a = a.Replace(' ', '-');
-            foreach (char item in karakterler)
+            char[] tr = new char[] { 'ç', 'ş', 'ü', 'ğ', 'ı', 'ö', '?', '*', '%', '!', '/', '$', '&',' ' };
+            char[] eng = new char[] { 'c', 's', 'u', 'g', 'i', 'o', '-', '-', '-', '-', '-', '-', '-','-' };
+            try
             {
-                a.Replace(item, '-');
+                a = a.Trim().ToLower();
+                for (int i = 0; i < tr.Length; i++)
+                {
+                    a = a.Replace(tr[i], eng[i]);
+                }
+                if (a.Length > 45)
+                {
+                    a = a.Substring(0, 45);
+
+                }
             }
-            if (a.Length > 45)
+            catch (Exception)
             {
-                a = a.Substring(0, 45);
 
+                return "";
+            }
+            return a;
+
+        }
+        public static string DescAd(string a)
+        {
+            char[] tr = new char[] { '*', '%', '!', '/', '$', '&'};
+            char[] eng = new char[] { '-', '-', '-', '-', '-', '-'};
+            try
+            {
+                a = a.Trim().ToLower();
+                for (int i = 0; i < tr.Length; i++)
+                {
+                    a = a.Replace(tr[i], eng[i]);
+                }
+                
+            }
+            catch (Exception)
+            {
+
+                return "";
             }
             return a;
 

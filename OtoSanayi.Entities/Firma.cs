@@ -15,26 +15,33 @@ namespace OtoSanayi.Entities
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
-
-        [Required, DisplayName("Aktif")]
+               
         public bool Aktif { get; set; }
-        [Required, DisplayName("Firma Adı"), StringLength(300, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
+        [ DisplayName("Firma Adı")]
         public string FirmaAdi { get; set; }
 
-        [Required, DisplayName("Firma Yetkili"), StringLength(300, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
+
+        [DisplayName("Etiket")]
+        public string Etiket { get; set; }
+        [DisplayName("Description")]
+        public string Description { get; set; }
+        [DisplayName("SeoName")]
+        public string SeoName { get; set; }
+
+        [Required, DisplayName("Firma Yetkili")]
         public string FirmaYetkili { get; set; }
 
-        [Required, DisplayName("Firma Tel")]
+        [DisplayName("Firma Tel")]
         public string FirmaTel { get; set; }
-        [Required, DisplayName("Firma Adres(Blok-No)"), StringLength(300, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
+        [DisplayName("Firma Adres(Blok-No)")]
         public string Adres { get; set; }
 
-        [DisplayName("Firma Kısa Açıklama"), StringLength(250, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
+        [DisplayName("Firma Kısa Açıklama")]
         public string KisaAciklama { get; set; }
         [DisplayName("Firma Açıklama")]
         public string Aciklama { get; set; }
 
-        [DisplayName("Firma Logo"), StringLength(100, ErrorMessage = "{0} Alanı{1} Karakter olmalı")]
+        [DisplayName("Firma Logo")]
         public string Logo { get; set; }
         [DisplayName("Firma WebLink")]
         public string FirmaLink { get; set; }
