@@ -15,7 +15,8 @@ namespace OtoSanayi.Entities
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
-               
+
+        
         public bool Aktif { get; set; }
         [ DisplayName("Firma Adı")]
         public string FirmaAdi { get; set; }
@@ -56,6 +57,7 @@ namespace OtoSanayi.Entities
         public string FirmaGoogle { get; set; }
         [DisplayName("Firma İnstagram Adresi")]
         public string FirmaInstagram { get; set; }
+
 
         public virtual List<FirmaResim> FirmaResimler { get; set; }
         public virtual List<Ilan> FirmaIlanlar { get; set; }

@@ -108,7 +108,7 @@ namespace OtoSanayi.WepApp.Controllers
             foreach (var a in s)
             {
                 xr.WriteStartElement("url");
-                xr.WriteElementString("loc", "http://teknikotosanayi.com/" + "Firma/DetayGetir/"+@AdGetir.LinkAd(a.KategoriFirma.FirstOrDefault(x=>x.ID>0).FirmaKategori.KategoriAdi+"-"+a.FirmaAdi).ToString()+"/"+a.ID);
+                xr.WriteElementString("loc", "http://teknikotosanayi.com/" +AdGetir.LinkAd(a.SeoName));
                 xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
                 xr.WriteElementString("priority", "0.90");
                 xr.WriteElementString("changefreq", "weekly");

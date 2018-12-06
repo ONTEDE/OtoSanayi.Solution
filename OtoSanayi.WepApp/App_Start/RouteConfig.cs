@@ -17,7 +17,7 @@ namespace OtoSanayi.WepApp
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             SeoFirmaListele list = new SeoFirmaListele();
-          
+
             foreach (var item in list.firmaGetir())
             {
                 routes.MapRoute(
@@ -26,13 +26,6 @@ namespace OtoSanayi.WepApp
                  defaults: new { controller = "Firma", action = "DetayGetir", id = item.ID }
              );
             }
-
-            //   routes.MapRoute(
-            //    name: "Aslı-Kafe",
-            //    url: "Aslı-Kafe",
-            //    defaults: new { controller = "Firma", action = "DetayGetir",id="5" }
-            //);
-
 
 
             routes.MapRoute(
@@ -66,6 +59,7 @@ namespace OtoSanayi.WepApp
                    defaults: new { controller = "Home", action = "Index", Aciklama = "TOSS", id = UrlParameter.Optional }
                );
 
+           
 
 
         }

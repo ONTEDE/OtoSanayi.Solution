@@ -2,91 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
   <url>
     <loc>http://teknikotosanayi.com/</loc>
-    <lastmod>2018-11-25</lastmod>
+    <lastmod>2018-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-kaya-otomotiv/1</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/hikmetabi</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-pasa-otomotiv/2</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/pasaabi</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-ardinc-oto/3</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/pasaabi1</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-asli-kafe/5</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/asliabi</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-birlik-kaporta/6</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/birlikoto</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-giresunluler-ciftligi/7</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/giresunbirlik</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-deneme-kaporta/8</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/kaportaabi</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-birlik-kaporta-deneme/9</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/denemeabi2</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-muzaffer-oto/10</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/otomuzaffer</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-oto-sufi/11</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/sufioto</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/motor-birlik-kaporta-1d/12</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/pasaabi2</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/Firma/DetayGetir/oto-elektrik-birlik-kaporta-1e/13</loc>
-    <lastmod>2018-11-25</lastmod>
+    <loc>http://teknikotosanayi.com/otokazim</loc>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com//Haber/DetayGetir/turk-oto--vatandaslarindan-vize-istemeyen-ulk/1</loc>
-    <lastmod>2018-11-25</lastmod>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com//Haber/DetayGetir/tropik-firtinada-(kirbac-firtinasi)-son-durum/2</loc>
-    <lastmod>2018-11-25</lastmod>
+    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
     <changefreq>weekly</changefreq>
   </url>
