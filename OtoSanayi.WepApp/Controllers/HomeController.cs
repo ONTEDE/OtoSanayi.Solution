@@ -98,9 +98,8 @@ namespace OtoSanayi.WepApp.Controllers
 
             xr.WriteStartElement("url");
             xr.WriteElementString("loc", "http://teknikotosanayi.com/");
-            xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
-            xr.WriteElementString("changefreq", "weekly");
-            xr.WriteElementString("priority", "1");
+            xr.WriteElementString("changefreq", "daily");
+            xr.WriteElementString("priority", "1.00");
             xr.WriteEndElement();
 
             //Burada veritabanımızdaki Firmaları SiteMap'e ekliyoruz.
@@ -109,9 +108,8 @@ namespace OtoSanayi.WepApp.Controllers
             {
                 xr.WriteStartElement("url");
                 xr.WriteElementString("loc", "http://teknikotosanayi.com/" +AdGetir.LinkAd(a.SeoName));
-                xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
                 xr.WriteElementString("priority", "0.90");
-                xr.WriteElementString("changefreq", "weekly");
+                xr.WriteElementString("changefreq", "daily");
                 xr.WriteEndElement();
             }
 
@@ -121,9 +119,8 @@ namespace OtoSanayi.WepApp.Controllers
             {
                 xr.WriteStartElement("url");
                 xr.WriteElementString("loc", "http://teknikotosanayi.com//Haber/DetayGetir/"+@AdGetir.LinkAd(b.HaberBaslik)+"/" + b.ID);
-                xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
                 xr.WriteElementString("priority", "0.90");
-                xr.WriteElementString("changefreq", "weekly");
+                xr.WriteElementString("changefreq", "daily");
                 xr.WriteEndElement();
             }
 
