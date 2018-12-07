@@ -2,92 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd">
   <url>
     <loc>http://teknikotosanayi.com/</loc>
-    <lastmod>2018-12-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1</priority>
+    <changefreq>daily</changefreq>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/hikmetabi</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/pasaabi</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/pasaabi1</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/asliabi</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/birlikoto</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/giresunbirlik</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/kaportaabi</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/denemeabi2</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/otomuzaffer</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/sufioto</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/pasaabi2</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com/otokazim</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com//Haber/DetayGetir/turk-oto--vatandaslarindan-vize-istemeyen-ulk/1</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>http://teknikotosanayi.com//Haber/DetayGetir/tropik-firtinada-(kirbac-firtinasi)-son-durum/2</loc>
-    <lastmod>2018-12-06</lastmod>
     <priority>0.90</priority>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
   </url>
 </urlset>
