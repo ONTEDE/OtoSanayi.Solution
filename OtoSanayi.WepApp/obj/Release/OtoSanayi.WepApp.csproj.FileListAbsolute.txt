@@ -201,7 +201,6 @@ C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Microsoft.A
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Newtonsoft.Json.dll
-C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.BusinessLayer.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.Entities.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\System.Web.Helpers.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\System.Web.Mvc.dll
@@ -213,7 +212,6 @@ C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\System.Web.
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\WebGrease.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.Core.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.DataAccessLayer.dll
-C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.BusinessLayer.pdb
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.Entities.pdb
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\Antlr3.Runtime.pdb
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\EntityFramework.xml
@@ -237,3 +235,5 @@ C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\bin\OtoSanayi.D
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Release\OtoSanayi.WepApp.csprojResolveAssemblyReference.cache
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Release\OtoSanayi.WepApp.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Release\OtoSanayi.WepApp.pdb
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Release\OtoSanayi.WepApp.Migrations.InitialCreate.resources
+C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.WepApp\obj\Release\OtoSanayi.WepApp.csproj.GenerateResource.Cache
