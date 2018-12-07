@@ -4,7 +4,10 @@
 
     string title = "";
     title+= Model.FirmaAdi + " | ";
-  
+    foreach (var item in Model.KategoriFirma)
+    {
+        title += item.FirmaKategori.KategoriAdi.ToLower() + " | ";
+    }
     title+= "teknikotosanayi.com";
     ViewBag.Title =Html.Raw(title);
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -149,9 +152,9 @@
                         <li><a href="@Model.FirmaGoogle" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                     </ul>
 
-                    <div class="tr-widget meta-widget">
-                        <div class="widget-title">
-                            <h4>@Model.FirmaAdi HAKKINDA</h4>
+                    <div class="tr-section local-events">
+                        <div class="section-title title-before">
+                            <h1><a href="#">@Model.FirmaAdi HAKKINDA</a></h1>
                         </div>
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation"><a href="#hakkimizda" data-toggle="tab"><span class="glyphicon glyphicon-th-list"></span>&nbsp;Hakkımızda</a></li>

@@ -120,7 +120,7 @@ namespace OtoSanayi.WepApp.Controllers
             foreach (var b in k)
             {
                 xr.WriteStartElement("url");
-                xr.WriteElementString("loc", "http://teknikotosanayi.com/Haber/DetayGetir/"+@AdGetir.LinkAd(b.HaberBaslik)+"/" + b.ID);
+                xr.WriteElementString("loc", "http://teknikotosanayi.com//Haber/DetayGetir/"+@AdGetir.LinkAd(b.HaberBaslik)+"/" + b.ID);
                 xr.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd"));
                 xr.WriteElementString("priority", "0.90");
                 xr.WriteElementString("changefreq", "weekly");

@@ -3,13 +3,26 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <title>@ViewBag.Title</title>
-    @RenderSection("metaEkle", required: false)
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Teknik Oto Sanayi Sitesi">
+    <meta name="description" content="">
 
+    <title>TOSS | Teknik Oto Sanayi Sitesi</title>
 
+     @*CSS*@ 
+    @*<link href="~/Content/plugins/footable/footable.core.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/slick.css">
+    <link rel="stylesheet" href="~/Content/jplayer.css">
+    <link rel="stylesheet" href="~/Content/main.css">
+    <link rel="stylesheet" href="~/Content/responsive.css">*@
 
-    @Styles.Render("~/Content/all")
-
+ @Styles.Render("~/Content/all")
     <link href="~/Content/plugins/blueimp/css/blueimp-gallery.min.css" rel="stylesheet" />
 
     <!-- font -->
@@ -115,10 +128,9 @@
 
                                     </ul>
                                     <div class="search">
-                                        @using (Html.BeginForm("AramaSonuc", "Home"))
-                                        {
-                                            <input type="text" name="ara" class="search-form" autocomplete="off" placeholder="Ara">
-                                        }
+                                        <form role="form">
+                                            <input type="text" class="search-form" autocomplete="off" placeholder="Ara">
+                                        </form>
                                     </div> <!--/.search-->
                                 </div>
                             </div><!-- /.topbar-right -->
@@ -157,7 +169,7 @@
                     <div class="col-sm-3">
                         <div class="widget-left">
                             <div class="widget-left-content">
-                                <a href="/Anasayfa"><img class="img-responsive" src="~/img/logotoss.png" alt="TOSS Logo" title="TOSS Logo"></a>
+                                <a href="/Anasayfa"><img class="img-responsive" src="~/img/logotoss.png" alt="Logo"></a>
                                 <div class="copyright">
                                     <p>&copy; @DateTime.Now.Year &nbsp;<a href="#">Teknik Oto Sanayi Sitesi.</a> </p>
                                 </div>
@@ -201,7 +213,19 @@
         </div>
     </footer><!-- /#footer -->
     <!-- JS -->
+    @*<script src="~/scripts/js/jquery.min.js"></script>
 
+        <script src="~/scripts/bootstrap.min.js"></script>
+        <script src="~/scripts/js/marquee.js"></script>
+        <script src="~/scripts/js/moment.min.js"></script>
+        <script src="~/scripts/js/theia-sticky-sidebar.js"></script>
+        <script src="~/scripts/js/jquery.jplayer.min.js"></script>
+        <script src="~/scripts/js/jplayer.playlist.min.js"></script>
+        <script src="~/scripts/js/slick.min.js"></script>
+        <script src="~/scripts/js/carouFredSel.js"></script>
+        <script src="~/scripts/js/jquery.magnific-popup.js"></script>
+        <script src="~/scripts/js/main.js"></script>
+        <script src="~/scripts/Admin/plugins/footable/footable.all.min.js"></script>*@
     @Scripts.Render("~/scripts/all")
     <script>
         $(document).ready(function () {
@@ -212,13 +236,11 @@
         });
     </script>
 
-    <script src="~/scripts/Admin/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="~/scripts/Admin/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="~/scripts/Admin/inspinia.js"></script>
     <script src="~/scripts/Admin/plugins/blueimp/jquery.blueimp-gallery.min.js"></script>
 
-    @RenderSection("JSdosya", required: false)
-
+    @RenderSection("JSdosya",required:false)
+   
     <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -230,7 +252,7 @@
 
     </script> -->
 
-
+   
 </body>
 
 </html>

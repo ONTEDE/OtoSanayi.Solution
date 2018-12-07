@@ -4,7 +4,7 @@
 @{
     Haber bhaber = null;
     Haber khaber1 = null;
-    Haber khaber2 = null;
+    Haber khaber2 =null;
     if (Model.Count() >= 1)
     {
         bhaber = Model[0] as Haber;
@@ -28,11 +28,9 @@
         <div class="tr-post">
             <div class="entry-header">
                 <div class="entry-thumbnail">
-                    @if (bhaber.haberResimler != null && bhaber.haberResimler.Count() != 0 && bhaber.haberResimler[0] != null)
+                    @if (bhaber.haberResimler != null && bhaber.haberResimler.Count() != 0&& bhaber.haberResimler[0] != null)
                     {
-                        <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID">
-                            <img class="img-responsive" src="~/img/Haber/@bhaber.haberResimler[0].ResimYol" title="@bhaber.HaberBaslik" alt="@bhaber.HaberBaslik">
-                        </a>
+                        <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID"><img class="img-responsive" src="~/img/Haber/@bhaber.haberResimler[0].ResimYol" alt="Image"></a>
                     }
                     else
                     {
@@ -54,7 +52,7 @@
                     <div class="continue-reading pull-left">
                         <a href="/Haber/DetayGetir/@AdGetir.LinkAd(bhaber.HaberBaslik)/@bhaber.ID">DEVAMI İÇİN TIKLAYINIZ<i class="fa fa-angle-right"></i></a>
                     </div>
-
+                    
                 </div>
             </div><!-- /.post-content -->
         </div><!-- /.tr-section -->
@@ -67,13 +65,13 @@
                 <div class="tr-post">
                     <div class="entry-header">
                         <div class="entry-thumbnail">
-                            @if (khaber1.haberResimler != null && khaber1.haberResimler.Count != 0 && khaber1.haberResimler[0] != null)
+                            @if (khaber1.haberResimler != null && khaber1.haberResimler.Count != 0 && khaber1.haberResimler[0] != null )
                             {
-                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID"><img class="img-responsive" src="~/img/Haber/@khaber1.haberResimler[0].ResimYol" alt="@khaber1.HaberBaslik" title="@khaber1.HaberBaslik"></a>
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID"><img class="" height="193" src="~/img/Haber/@khaber1.haberResimler[0].ResimYol" alt="Image"></a>
                             }
                             else
                             {
-                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID"><img class="img-responsive" src="http://placehold.it/262x179" alt="@khaber1.HaberBaslik" title="@khaber1.HaberBaslik"></a>
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber1.HaberBaslik)/@khaber1.ID"><img class="img-responsive" src="http://placehold.it/262x179" alt="Image"></a>
                             }
                         </div>
                     </div>
@@ -109,20 +107,20 @@
                 <div class="tr-post">
                     <div class="entry-header">
                         <div class="entry-thumbnail">
-                            @if (khaber2.haberResimler != null && khaber2.haberResimler.Count != 0 && khaber2.haberResimler[0] != null)
+                            @if (khaber2.haberResimler != null && khaber2.haberResimler.Count != 0 && khaber2.haberResimler[0] != null )
                             {
-                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID"><img class="img-responsive" src="~/img/Haber/@khaber2.haberResimler[0].ResimYol" alt="@khaber2.HaberBaslik" title="@khaber2.HaberBaslik"></a>
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID"><img class="" height="193" src="~/img/Haber/@khaber2.haberResimler[0].ResimYol" alt="Image"></a>
                             }
                             else
                             {
-                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID"><img class="img-responsive" src="http://placehold.it/262x179" alt="@khaber2.HaberBaslik" title="@khaber2.HaberBaslik"></a>
+                                <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID"><img class="img-responsive" src="http://placehold.it/262x179" alt="Image"></a>
                             }
                         </div>
                     </div>
                     <div class="post-content">
                         @*<div class="author">
-                                <a href="#"><img class="img-responsive img-circle" src="http://placehold.it/44x44" alt="Image"></a>
-                            </div>*@
+                            <a href="#"><img class="img-responsive img-circle" src="http://placehold.it/44x44" alt="Image"></a>
+                        </div>*@
 
                         <h2 class="entry-title">
                             <a href="/Haber/DetayGetir/@AdGetir.LinkAd(khaber2.HaberBaslik)/@khaber2.ID">@khaber2.HaberBaslik</a>
