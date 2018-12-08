@@ -2,8 +2,8 @@
 @using OtoSanayi.Entities
 @model List<Firma>
 @{
-    ViewBag.Title = "FirmaListele";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Teknik Oto Sanayi Firmaları | teknikotosanayi.com";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="bg-transparent">
     <div class="section-title">
@@ -61,7 +61,9 @@
                             <td>
                                 @if (item.Aktif == true)
                                 {
-                                    <b><a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.FirmaAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a></b>
+                                    @*<b><a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.KategoriFirma.FirstOrDefault(x=>x.ID>0).FirmaKategori.KategoriAdi+"-"+item.FirmaAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a></b>*@
+
+                                    <b><a href="/@AdGetir.LinkAd(item.SeoName)" title="@item.KisaAciklama">@item.FirmaAdi</a></b>
                                 }
                                 else
                                 {

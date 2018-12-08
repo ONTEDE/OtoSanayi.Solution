@@ -10,7 +10,8 @@
 
             @if (item.Aktif == true)
             {
-                <b><a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.FirmaAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a></b>
+                @*<b><a href="/Firma/DetayGetir/@AdGetir.LinkAd(item.FirmaAdi)/@item.ID" title="@item.KisaAciklama">@item.FirmaAdi</a></b>*@
+                <b><a href="/@AdGetir.LinkAd(item.SeoName)" title="@item.KisaAciklama">@item.FirmaAdi</a></b>
             }
             else
             {

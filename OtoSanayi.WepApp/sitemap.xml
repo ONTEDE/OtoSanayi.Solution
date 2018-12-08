@@ -6,72 +6,72 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/hikmetabi</loc>
+    <loc>http://teknikotosanayi.com/iletisim</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>http://teknikotosanayi.com/fuat</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/pasaabi</loc>
+    <loc>http://teknikotosanayi.com/fuat2</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/pasaabi1</loc>
+    <loc>http://teknikotosanayi.com/fuat3</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/asliabi</loc>
+    <loc>http://teknikotosanayi.com/fuat4</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/birlikoto</loc>
+    <loc>http://teknikotosanayi.com/fuat5</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/giresunbirlik</loc>
+    <loc>http://teknikotosanayi.com/fuat6</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/kaportaabi</loc>
+    <loc>http://teknikotosanayi.com/fuat7</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/denemeabi2</loc>
+    <loc>http://teknikotosanayi.com/harun</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/otomuzaffer</loc>
+    <loc>http://teknikotosanayi.com/fuat0</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/sufioto</loc>
+    <loc>http://teknikotosanayi.com/bemparoto</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/pasaabi2</loc>
+    <loc>http://teknikotosanayi.com/muzo</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com/otokazim</loc>
+    <loc>http://teknikotosanayi.com//Haber/DetayGetir/zeytinburnu-belediye-baskanina-ziyaretimiz/1</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>http://teknikotosanayi.com//Haber/DetayGetir/turk-oto--vatandaslarindan-vize-istemeyen-ulk/1</loc>
-    <priority>0.90</priority>
-    <changefreq>daily</changefreq>
-  </url>
-  <url>
-    <loc>http://teknikotosanayi.com//Haber/DetayGetir/tropik-firtinada-(kirbac-firtinasi)-son-durum/2</loc>
+    <loc>http://teknikotosanayi.com//Kurumsal/DetayGetir/baskanin-mesaji/1</loc>
     <priority>0.90</priority>
     <changefreq>daily</changefreq>
   </url>

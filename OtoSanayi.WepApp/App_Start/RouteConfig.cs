@@ -45,7 +45,7 @@ namespace OtoSanayi.WepApp
              );
             routes.MapRoute(
                 name: "Iletisim",
-                url: "iletişim",
+                url: "iletisim",
                 defaults: new { controller = "Iletisim", action = "Index" }
             );
             routes.MapRoute(

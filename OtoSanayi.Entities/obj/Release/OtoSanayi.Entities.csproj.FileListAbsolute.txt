@@ -30,6 +30,5 @@ C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\E
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.xml
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\bin\Release\EntityFramework.SqlServer.xml
-C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.csprojResolveAssemblyReference.cache
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.dll
 C:\Users\FF\Documents\GitHub\OtoSanayi.Solution\OtoSanayi.Entities\obj\Release\OtoSanayi.Entities.pdb

@@ -1,7 +1,12 @@
 ﻿@model OtoSanayi.Entities.Kurumsal
 @{
-    ViewBag.Title = "DetayGetir";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+
+	string title = "";
+	title += Model.Kurumsalkategori.KategoriAdi + " | ";
+
+	title += "teknikotosanayi.com";
+	ViewBag.Title = Html.Raw(title);
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="bg-transparent">

@@ -102,8 +102,14 @@ namespace OtoSanayi.WepApp.Controllers
             xr.WriteElementString("priority", "1.00");
             xr.WriteEndElement();
 
-            //Burada veritabanımızdaki Firmaları SiteMap'e ekliyoruz.
-            var s = Veri.Firmalar.ToList();
+			xr.WriteStartElement("url");
+			xr.WriteElementString("loc", "http://teknikotosanayi.com/iletisim");
+			xr.WriteElementString("changefreq", "daily");
+			xr.WriteElementString("priority", "0.90");
+			xr.WriteEndElement();
+
+			//Burada veritabanımızdaki Firmaları SiteMap'e ekliyoruz.
+			var s = Veri.Firmalar.ToList();
             foreach (var a in s)
             {
                 xr.WriteStartElement("url");
@@ -124,7 +130,19 @@ namespace OtoSanayi.WepApp.Controllers
                 xr.WriteEndElement();
             }
 
-            xr.WriteEndDocument();
+
+			//Aynı şekilde burada da Kurumsal'ı Sitemap'e ekliyoruz.
+			var kurumsal = Veri.KurumsalKategoriler.ToList();
+			foreach (var kurum in kurumsal)
+			{
+				xr.WriteStartElement("url");
+				xr.WriteElementString("loc", "http://teknikotosanayi.com//Kurumsal/DetayGetir/" + @AdGetir.LinkAd(kurum.KategoriAdi) + "/" + kurum.ID);
+				xr.WriteElementString("priority", "0.90");
+				xr.WriteElementString("changefreq", "daily");
+				xr.WriteEndElement();
+			}
+
+			xr.WriteEndDocument();
             
             //urlset etiketini kapattık
             xr.Flush();

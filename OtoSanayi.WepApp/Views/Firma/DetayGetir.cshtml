@@ -47,7 +47,7 @@
         <div class="col-sm-3 tr-sidebar tr-sticky">
             <div class="theiaStickySidebar">
                 <div class="tr-section ">
-                    <a href="#"><img class="img-responsive" src="~/img/Firma/@Model.Logo" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="~/img/Firma/@Model.Logo" alt="@Model.FirmaAdi"></a>
                 </div><!-- /.tr-post -->
                 <div class="tr-widget meta-widget">
 
@@ -178,8 +178,8 @@
 														{
 															ayrac++;
 															<div class="col-md-3 col-xs-6">
-																<a href="~/img/Firma/@item.ResimYol" title="@Model.FirmaAdi" data-gallery="">
-																	<img class="img-thumbnail" src="~/img/Firma/@item.ResimYol" alt="@item.ResimYol" title="@item.ResimYol">
+																<a href="~/img/Firma/@item.ResimYol" title="@Model.FirmaAdi" alt="@Model.FirmaAdi" data-gallery="">
+																	<img class="img-thumbnail" src="~/img/Firma/@item.ResimYol" alt="@Model.FirmaAdi" title="@Model.FirmaAdi">
 																</a>
 															</div>		if (ayrac % 4 == 0)
 															{
