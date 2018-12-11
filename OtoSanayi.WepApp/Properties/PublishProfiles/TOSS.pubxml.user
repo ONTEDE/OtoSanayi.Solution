@@ -67,7 +67,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/08/2018 19:49:22</publishTime>
     </File>
     <File Include="bin/OtoSanayi.WepApp.dll">
-      <publishTime>08/12/2018 22:10:56</publishTime>
+      <publishTime>12/08/2018 23:27:11</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>11/07/2018 22:21:50</publishTime>
@@ -3094,7 +3094,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/07/2018 22:21:47</publishTime>
     </File>
     <File Include="Views/Firma/DetayGetir.cshtml">
-      <publishTime>12/08/2018 22:13:08</publishTime>
+      <publishTime>12/08/2018 23:26:46</publishTime>
     </File>
     <File Include="Views/Firma/Duzenle.cshtml">
       <publishTime>11/26/2018 23:49:26</publishTime>
@@ -3118,7 +3118,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/07/2018 22:21:47</publishTime>
     </File>
     <File Include="Views/Firma/_PartialFirmalariGetir.cshtml">
-      <publishTime>12/07/2018 18:12:53</publishTime>
+      <publishTime>08/12/2018 22:42:14</publishTime>
     </File>
     <File Include="Views/Firma/_PartialResimGalerisi.cshtml">
       <publishTime>11/07/2018 22:21:47</publishTime>
@@ -3328,7 +3328,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/07/2018 22:21:47</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>08/12/2018 21:25:28</publishTime>
+      <publishTime>08/12/2018 22:32:16</publishTime>
     </File>
     <File Include="Views/Shared/_LayoutAdmin.cshtml">
       <publishTime>11/26/2018 23:49:26</publishTime>
