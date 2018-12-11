@@ -28,11 +28,11 @@ namespace OtoSanayi.WepApp
             }
 
 
-            routes.MapRoute(
-                  name: "Anasayfa",
-                  url: "Anasayfa",
-                  defaults: new { controller = "Home", action = "Index" }
-              );
+            //routes.MapRoute(
+            //      name: "Anasayfa",
+            //      url: "Anasayfa",
+            //      defaults: new { controller = "Home", action = "Index" }
+            //  );
             routes.MapRoute(
                  name: "Login",
                  url: "Login",
