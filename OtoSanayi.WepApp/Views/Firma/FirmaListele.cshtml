@@ -5,6 +5,17 @@
 	ViewBag.Title = "Teknik Oto Sanayi Firmaları | teknikotosanayi.com";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@section metaekle{
+
+	<meta name="author" content="Teknik Oto Sanayi Sitesi Tüm Firmaları">
+	<meta name="description" content="İstanbul topkapı teknik oto sanayi sitesinde bulunan tüm oto yedek parça, oto tamir ve bakım, oto elektrik, oto kaporta boya ve diğer tüm firmalarımıza ulaşabilirsiniz.">
+	<meta name="keywords" content="teknik oto sanayi, oto sanayi, istanbul oto sanayi, topkapı oto sanayi, oto tamir bakım firmaları, oto yedek parça firmaları, oto kaporta boya firmaları, oto eletrik firmaları,
+ istanbul oto tamir bakım firmaları,istanbul oto yedek parça firmaları, istanbul oto kaporta boya firmaları,istanbul oto eletrik firmaları, jant firmaları, balata firmaları, madeni yağ ve sanayi yağ firmaları" />
+
+}
+
+
 <div class="bg-transparent">
     <div class="section-title">
         @foreach (var item in Model)
